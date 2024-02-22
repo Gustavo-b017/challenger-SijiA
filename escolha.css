@@ -9,23 +9,31 @@
 
 nav {
   background-color: rgb(108, 108, 108);
-  width: 100%;
+  height: auto;
+  padding: auto;
 }
 
 .nav-ul {
   display: flex;
-  margin-left:15px;
-} 
+  justify-content: center;
+  border: 3px solid green;
+}
+
+.btn-nav {
+  padding: 20px;
+}
 
 .nav-links {
 	color: #000000;
 	font-family:Arial, Helvetica, sans-serif;
 	font-size: 21px;
 	font-weight:500;
-	padding: 20px;
 } 
 
+
+
 #img-nav {
+  float: ;
   height: 40px;
   width: auto;
   margin: 0;
