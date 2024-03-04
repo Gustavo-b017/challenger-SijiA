@@ -11,7 +11,7 @@
 }
 
 body{
-  padding: 0 3%;
+  padding: 3% 3%;
   background: #434750;
 }
 
@@ -33,6 +33,8 @@ nav ul li {
   align-content: center;
   transition: 0.5s;
   padding: 10px 5px;
+  z-index: var(--i);
+  position: relative;
 }
 
 nav ul li:hover {
@@ -40,6 +42,31 @@ nav ul li:hover {
     transform: translateY(15px);
     transition: 0.5s;
     
+}
+
+nav ul li::after {
+  content: '';
+  position: absolute;
+
+  width: 20px;
+  height: 100%;
+  background: #2e3133 ;
+  transform: skewY(-70deg);
+  transform-origin: right;
+  transition: 0.5s;
+}
+
+nav ul li::before {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background: #35383e;
+  transform-origin: bottom;
+  transform: skewX(-20deg);
+  transform: 0.3s;
 }
 
 nav ul li a {
