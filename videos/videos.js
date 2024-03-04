@@ -6,7 +6,7 @@ listaVideo.forEach(video =>{
   video.onclick = () =>{
      listaVideo.forEach(vid => vid.classList.remove('active'));
      video.classList.add('active');
-     if(video.classList.contains('active')){
+     if(video.classList.contains.add('active')){
          let src = video.children[0].getAttribute('src');
          videoPrincipal.src = src;
          let text = video.children[1].innerHTML;

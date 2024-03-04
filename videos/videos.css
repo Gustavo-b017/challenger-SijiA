@@ -1,6 +1,4 @@
 *{
-    margin:0;
-    padding:0;
     box-sizing:border-box;
     text-transform: capitalize;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -26,52 +24,52 @@ body{
     padding:5px 5%;
 }
 
-.container .video-principal{
+.video-principal{
     background: #fff;
     border-radius:5px;
     padding:10px;
 }
 
-.container .video-principal video{
+.video-principal video{
     width:100%;
     border-radius:5px;
 }
 
-.conatiner .video-principal .titulo{
+.titulo{
    color:#333;
    font-size:23px;
    padding-top:15px;
    padding-bottom:15px;
 }
 
-.container .lista-video{
+.lista-video{
     background:#fff;
     border-radius:5px;
     height:520px;
     overflow-y:scroll;
 }
 
-.container .lista-video::-webkit-scrollbar{
+.lista-video::-webkit-scrollbar{
     width:7px;
 }
 
-.container .lista-video::-webkit-scrollbar-track{
-    background: #ccc;
+.lista-video::-webkit-scrollbar-track{
+    background: #ccc;   
     border-radius:5px;
 }
 
-.container .lista-video::-webkit-scrollbar-thumb{
+.lista-video::-webkit-scrollbar-thumb{
     background: #666;
     border-radius:5px;
 }
 
-.container .lista-video .vid video{
+.lista-video .vid video{
     width:100px;
     border-radius:5px;
 
 }
 
-.container .lista-video .vid{
+.lista-video .vid{
     display:flex;
     align-items:center;
     gap:15px;
@@ -83,19 +81,19 @@ body{
     cursor:pointer;
 }
 
-.container .lista-video .vid:hover{
+.lista-video .vid:hover{
     background:#eee;
 }
 
-.container .lista-video .vid.active{
+.lista-video .vid.active{
     background: #2980b9;
 }
 
-.container .lista-video .vid.active .titulo{
+.lista-video .vid.active .title{
     color:white;
 }
 
-.container .lista-video .vid .titulo{
+.lista-video .vid .title{
     color:#333;
     font-size:17px;
 }
