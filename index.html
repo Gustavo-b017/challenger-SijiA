@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./escolha.css">
+  <link rel="stylesheet" href="./css geral/escolha.css">
   <script src="https://kit.fontawesome.com/f5bde6d61f.js" crossorigin="anonymous"></script>
   <title>Document</title>
   
@@ -13,16 +13,30 @@
   
   <nav>
 
-    <div><a href="#" id="logo-nav">SijiA</a></div>
-    <ul>
-      <li style="--i:7;"id="logo-nav-burguer"><a href="#" id="logo-nav" >SijiA</a></li>
-      <li style="--i:6;"><a href="#">HOME</a></li>
-      <li style="--i:5;"><a href="#">Sobre</a></li>
-      <li style="--i:4;"><a href="./jogos/memoria/memoria.html">Jogos</a></li>
-      <li style="--i:3;"><a href="./videos/videos.html">Informacoes</a></li>
-      <li style="--i:2;" id="ultimo-nav-shadow"><a href="#">Outros</a></li>
-      <!-- <li style="--i:1;" id="ultimo-nav-delet"><a id="ultimo-nav-li" class="fa-solid fa-bars"></a></li> -->
+    <ul id="menu_geral">
+      <li class="menu_1">
+        <div><a href="#" id="logo-nav">SijiA</a></div>
+      </li>
+
+      <li class="menu_2 none">
+        <ul id="ul_estilo" >
+          <li style="--i:6;" class="esconder"><a href="#" id="logo-nav" >SijiA</a></li>
+          <li style="--i:5;"><a href="#">HOME</a></li>
+          <li style="--i:4;"><a href="#">Sobre</a></li>
+          <li style="--i:3;"><a href="./jogos/memoria/memoria.html">Jogos</a></li>
+          <li style="--i:2;"><a href="./videos/videos.html">Informacoes</a></li>
+          <li style="--i:1;" id="ultimo-nav-shadow"><a href="#">Outros</a></li>
+       </ul>
+      </li>
+
+      <li class="menu_3">
+        
+          <a href="#" id="menu_icone"><ion-icon name="menu-sharp"></ion-icon></a>
+        
+      </li>
     </ul>
+    
+    
   </nav>   
   
      <div class="conteudo">
@@ -43,7 +57,7 @@
     <ul class="social_icone">
       <li class="logo1"><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
       <li class="logo2"><a href=""><ion-icon name="logo-linkedin"></ion-icon></a></li>
-      <li class="logo3"><a href=""><ion-icon name="logo-linkedin"></ion-icon></a></li>
+      <li class="logo3"><a href=""><ion-icon name="logo-github"></ion-icon></a></li>
       <li class="logo4"><a href=""><ion-icon name="logo-twitter"></ion-icon></a></li>
     </ul>
 
@@ -58,6 +72,6 @@
   
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  <script src="./memoria.js"></script>
+  <script src="./JS_geral/js.js"></script>
 </body>
 </html>

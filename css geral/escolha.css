@@ -12,6 +12,8 @@
 
 body{
   background: #434750;
+  display: flex;
+  flex-direction: column;
 }
 
 /* menu de navegacao */
@@ -25,29 +27,36 @@ nav {
   margin-bottom: 20px;
 }
 
-nav ul {
+#menu_geral {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+nav #ul_estilo {
   display: flex;
   position: relative;
   transition: 0.5s;
   align-items: center;
   justify-content: end;
+  justify-content: space-between;
 }
 
-nav ul li {
+nav #ul_estilo li {
   position: relative;
   transition: 0.5s;
   background: #2e3133;
   padding: 10px 6px;
 }
 
-nav ul li:hover {
+nav #ul_estilo li:hover {
   background: #33a3ee;
   transform: translateY(15px);
   transition: 0.5s;
 
 }
 
-nav ul li::before {
+nav #ul_estilo li::before {
   content: '';
   position: absolute;
   left: 100%;
@@ -60,12 +69,12 @@ nav ul li::before {
   bottom: -16px;
 }
 
-nav ul li:hover::before {
+nav #ul_estilo li:hover::before {
   background: #1f5378;
   transition: 0.5s;
 }
 
-nav ul li::after {
+nav #ul_estilo li::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -79,12 +88,12 @@ nav ul li::after {
 
 }
 
-nav ul li:hover::after {
+nav #ul_estilo li:hover::after {
   background: #2982b9;
   transition: 0.5s;
 }
 
-nav ul li a {
+nav #ul_estilo li a {
   padding: 5px;
   text-transform: uppercase;
   font-size: 18px;
@@ -92,9 +101,11 @@ nav ul li a {
   cursor: pointer;
 }
 
-nav div {
+nav #menu_geral li:first-child{
   justify-content: start;
-  float: left;
+}
+#menu_geral .menu_3 {
+  display: none;
 }
 
 #logo-nav{
@@ -104,39 +115,56 @@ nav div {
   font-weight:bold;
 }
 
-#logo-nav-burguer{
-  display: none;
-}
 
 /* menu para moblile */
 @media (max-width:700px){
-  
-  #logo-nav-burguer{
-    display: block;
+
+  .none {
+    display: none;
   }
 
+  .block {
+    display: block;
+  }
+  
   #logo-nav{
-    font-size: 20px;
+    font-size: 30px;
   }
 
   body{
-    margin: 4% 5% ;
+    margin: 4% 3% ;
     display: flex;
     /* background: #434750; */
   }
 
-  nav div {
-    display: none;
+  nav  {
+    justify-content: start;
+    position: relative;
   }
   
-  nav ul {
-    display: flex;
+  #menu_geral {
+    justify-content: start;
+    position: relative;
+    justify-content: space-between;
+  }
+
+  #menu_geral .menu_2 {
+    position: absolute;
+  }
+  
+  #menu_geral .menu_3, .menu_3 a {
+    display: block;
+    font-size: 30px;
+    color: #fff;
+  }
+
+  nav #ul_estilo {
     flex-direction: column;
     position: relative;
     transition: 0.5s;
   }
   
-  nav ul li {
+  nav #ul_estilo li {
     position: relative;
     width: 200px;
     padding: 5px;
@@ -145,14 +173,14 @@ nav div {
     transition: 0.5s;
   }
   
-  nav ul li:hover {
+  nav #ul_estilo li:hover {
     background: #33a3ee;
     transform: translateX(50px);
     transition: 0.5s;
   
   }
   
-  nav ul li::before {
+  nav #ul_estilo li::before {
     content: '';
     position: absolute;
     top: -55px;
@@ -165,11 +193,11 @@ nav div {
     transition: 0.5s;
   }
   
-  nav ul li:hover::before {
+  nav #ul_estilo li:hover::before {
     background: #1f5378;
   }
   
-  nav ul li::after {
+  nav #ul_estilo li::after {
     content: '';
     position: absolute;
     top: -54px;
@@ -183,10 +211,10 @@ nav div {
   
   }
   
-  nav ul li:hover::after {
+  nav #ul_estilo li:hover::after {
     background: #2982b9;
   }
-  nav ul li a {
+  nav #ul_estilo li a {
     color: #999;
     display: block;
     text-transform:uppercase ;
@@ -195,7 +223,7 @@ nav div {
     padding: 15px;
   }
   
-  nav ul li:hover a {
+  nav #ul_estilo li:hover a {
     color: #fff;
   }
   
