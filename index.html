@@ -11,14 +11,16 @@
 </head>
 <body>
   
+  <!----------------------- MENU ---------------------->
   <nav>
 
     <ul id="menu_geral">
-      <li class="menu_1">
+      <li>
         <div><a href="#" id="logo-nav">SijiA</a></div>
       </li>
 
-      <li class="menu_2 none">
+      <!-- MENU (computador) -->
+      <li class="menu_2">
         <ul id="ul_estilo" >
           <li style="--i:6;" class="esconder"><a href="#" id="logo-nav" >SijiA</a></li>
           <li style="--i:5;"><a href="#">HOME</a></li>
@@ -29,18 +31,30 @@
        </ul>
       </li>
 
-      <li class="menu_3">
-        
-          <a href="#" id="menu_icone"><ion-icon name="menu-sharp"></ion-icon></a>
-        
+      <!-- BOTÃO MENU BURGER -->
+      <button onclick="animarMenu()" id="btn-menu">
+        <span class='linha'></span>
+        <span class='linha'></span>
+        <span class='linha'></span>
+      </button>
+
+      <!-- MENU (mobile) -->
+      <li class="menu-mobile" id="menu-mobile">
+        <ul id="ul_estilo" >
+          <li style="--i:6;" class="esconder"><a href="#" id="logo-nav" >SijiA</a></li>
+          <li style="--i:5;"><a href="#">HOME</a></li>
+          <li style="--i:4;"><a href="#">Sobre</a></li>
+          <li style="--i:3;"><a href="./jogos/memoria/memoria.html">Jogos</a></li>
+          <li style="--i:2;"><a href="./videos/videos.html">Informacoes</a></li>
+          <li style="--i:1;" id="ultimo-nav-shadow"><a href="#">Outros</a></li>
+       </ul>
       </li>
+
     </ul>
-    
-    
   </nav>   
   
      <div class="conteudo">
-      oi
+      <h1>CONTEÚDO</h1>
      </div>
 
 

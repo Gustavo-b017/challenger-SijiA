@@ -20,17 +20,18 @@ body{
 
 nav {
   padding: 0.6% 3%;
+  margin-top: 10px;
+
   display: flex;
   align-items: center;
-  justify-content: end;
   justify-content: space-between;
-  margin-bottom: 20px;
+
 }
 
 #menu_geral {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 100vw;
 }
 
 nav #ul_estilo {
@@ -104,28 +105,94 @@ nav #ul_estilo li a {
 nav #menu_geral li:first-child{
   justify-content: start;
 }
-#menu_geral .menu_3 {
-  display: none;
-}
 
 #logo-nav{
   color:#FFF;
   font-size: 35px;
-  padding: 5px;
   font-weight:bold;
 }
 
+/*************** Menu mobile ***************/
 
-/* menu para moblile */
+.menu-mobile {
+
+  display: flex;
+  align-items: start;
+  justify-content: flex-end;
+
+  background-color: #43475071;
+  backdrop-filter: blur(10px);
+  position: absolute;
+  margin-top: 50px;
+  left: 0;
+
+  width: calc(100vw - 70px);
+  height: 0;
+
+  visibility: hidden; /* Normalmente vai ficar escondido */
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+/************ Botão menu-burger ************/
+
+#btn-menu{
+  width: 45px;
+  height: 45px;
+  background: transparent;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+  display: none
+}
+
+.linha {
+  width: 25px;
+  height: 2px;
+  background-color: #ccc;
+  display: block;
+  margin: 6px auto;
+  position: relative;
+  transform-origin: center;
+  transition: 0.2s;
+}
+
+/* Botão menu-burger ATIVO */
+
+nav button.active {
+  border: 2px solid red;
+}
+
+nav button.active .linha:nth-child(1){
+  /* Rotacionando a primeira linha pra formar uma perna do X */
+  transform: translateY(8px) rotate(-45deg);
+  background-color: red;
+}
+
+nav button.active .linha:nth-child(3){
+  /* Rotacionando a terceira linha pra formar a outra perna do X */
+  transform: translateY(-8px) rotate(45deg);
+  background-color: red;
+}
+
+nav button.active .linha:nth-child(2){
+  /* Removendo a linha do meio */
+  width: 0;
+}
+
+
+
+.none {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+/************ Responsividade para moblile ************/
 @media (max-width:700px){
-
-  .none {
-    display: none;
-  }
-
-  .block {
-    display: block;
-  }
   
   #logo-nav{
     font-size: 30px;
@@ -148,14 +215,20 @@ nav #menu_geral li:first-child{
     justify-content: space-between;
   }
 
-  #menu_geral .menu_2 {
-    position: absolute;
+  /* Removendo o menu do computador */
+  .menu_2 {
+    display: none;
   }
-  
-  #menu_geral .menu_3, .menu_3 a {
+
+  /* Botão burger */
+  #btn-menu {
     display: block;
-    font-size: 30px;
-    color: #fff;
+  }
+
+  /* Acrescentando o menu mobile */
+  .menu-mobile.abrirMenu{
+    visibility: visible;
+    height: calc(100vh - 100px);
   }
 
   nav #ul_estilo {
