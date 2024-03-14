@@ -7,7 +7,7 @@
   font-family: "Quicksand", sans-serif;
   list-style: none;
   text-decoration: none;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 body{
@@ -112,25 +112,6 @@ nav #menu_geral li:first-child{
   font-weight:bold;
 }
 
-/*************** Menu mobile ***************/
-
-.menu-mobile {
-
-  display: flex;
-  align-items: start;
-
-  /* backdrop-filter: blur(4px); */
-  position: absolute;
-  /* margin-top: 50px; */
-
-  width: calc(100vh - 350px);
-  height: 0;
-
-  visibility: hidden; /* Normalmente vai ficar escondido */
-  transition: 1s;
-  overflow: hidden;
-}
-
 /************ Botão menu-burger ************/
 
 #btn-menu{
@@ -200,18 +181,31 @@ nav button.active .linha:nth-child(2){
     justify-content: space-between;
   }
 
-  /* Removendo o menu do computador */
-  .menu_2 {
-    display: none;
-  }
-
   /* Botão burger */
   #btn-menu {
     display: block;
   }
 
+  /* Menu mobile */
+  .menu {
+
+    display: flex;
+    align-items: start;
+  
+    backdrop-filter: blur(2px);
+    position: absolute;
+    /* margin-top: 50px; */
+  
+    width: calc(100vw - 73px);
+    height: 0;
+  
+    visibility: hidden; /* Normalmente vai ficar escondido */
+    transition: 1s;
+    overflow: hidden;
+  }  
+
   /* Acrescentando o menu mobile */
-  .menu-mobile.abrirMenu{
+  .menu.abrirMenu{
     visibility: visible;
     padding-top: 30px;
     height: calc(100vh - 100px);

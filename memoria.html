@@ -1,12 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jogo da memoria</title>
   <!-- <link rel="stylesheet" href="/escolha.css"> -->
-  <link rel="stylesheet" href="./memoria.css">
+  <link rel="stylesheet" href="./css geral/escolha.css">
+  <link rel="stylesheet" href="./css geral/memoria.css">
 </head>
+
+<!----------------------- MENU ---------------------->
+<nav>
+
+  <ul id="menu_geral">
+
+    <!-- LOGO -->
+    <li>
+      <div><a href="#" id="logo-nav">SijiA</a></div>
+    </li>
+
+    <!-- MENU -->
+    <li class="menu" id="menu">
+      <ul id="ul_estilo" >
+        <li style="--i:6;" class="esconder"><a href="#" id="logo-nav" >SijiA</a></li>
+        <li style="--i:5;"><a href="../index.html">HOME</a></li>
+        <li style="--i:4;"><a href="#">Sobre</a></li>
+        <li style="--i:3;"><a href="#">Jogos</a></li>
+        <li style="--i:2;"><a href="./videos/videos.html">Informacoes</a></li>
+        <li style="--i:1;" id="ultimo-nav-shadow"><a href="#">Outros</a></li>
+     </ul>
+    </li>
+
+    <!-- BOTÃO MENU BURGER -->
+    <button onclick="animarMenu()" id="btn-menu">
+      <span class='linha'></span>
+      <span class='linha'></span>
+      <span class='linha'></span>
+    </button>
+
+  </ul>
+</nav>   
 
 <body>
   
@@ -29,7 +62,9 @@
       <div class="win">You won!</div>
     </div>
   </div>
+  
+  <script src="./JS_geral/js.js"></script>
+  <script src="./JS_geral/memoria.js"></script>
 
-  <script src="./memoria.js"></script>
 </body>
 </html>

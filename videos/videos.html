@@ -3,26 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="videos.css">
-    <link rel="stylesheet" href="../escolha.css">
+    <link rel="stylesheet" href="../css geral/videos.css">
+    <link rel="stylesheet" href="../css geral/escolha.css">
     <title>Videos</title>
 </head>
 <body>
 
-    <nav>
+    <!----------------------- MENU ---------------------->
+  <nav>
 
+    <ul id="menu_geral">
+
+      <!-- LOGO -->
+      <li>
         <div><a href="#" id="logo-nav">SijiA</a></div>
-        <ul>
-          <li style="--i:7 ;"id="logo-nav-burguer"><a href="#" id="logo-nav" >SijiA</a></li>
-          <li style="--i:6;"><a href="#">HOME</a></li>
-          <li style="--i:5;"><a href="#">Sobre</a></li>
-          <li style="--i:4;"><a href="./jogos/memoria/memoria.html">Jogos</a></li>
-          <li style="--i:3;"><a href="./videos/videos.html">Informacoes</a></li>
-          <li style="--i:2;" id="ultimo-nav-shadow"><a href="#">Outros</a></li>
-          <!-- <li style="--i:1;" id="ultimo-nav-delet"><a id="ultimo-nav-li" class="fa-solid fa-bars"></a></li> -->
-        </ul>
-      </nav>   
-      
+      </li>
+
+      <!-- MENU -->
+      <li class="menu" id="menu">
+        <ul id="ul_estilo" >
+          <li style="--i:6;" class="esconder"><a href="#" id="logo-nav" >SijiA</a></li>
+          <li style="--i:5;"><a href="../index.html">HOME</a></li>
+          <li style="--i:4;"><a href="#">Sobre</a></li>
+          <li style="--i:3;"><a href="./jogos/memoria/memoria.html">Jogos</a></li>
+          <li style="--i:2;"><a href="#">Informacoes</a></li>
+          <li style="--i:1;" id="ultimo-nav-shadow"><a href="#">Outros</a></li>
+       </ul>
+      </li>
+
+      <!-- BOTÃO MENU BURGER -->
+      <button onclick="animarMenu()" id="btn-menu">
+        <span class='linha'></span>
+        <span class='linha'></span>
+        <span class='linha'></span>
+      </button>
+
+    </ul>
+  </nav>   
 
     <h3 class="titulo-video">Aprendendo</h3>
 
@@ -87,6 +104,7 @@
     </div>
 
 <script src="videos.js"></script>
+<script src="../JS_geral/js.js"></script>
 
 </body>
 </html>
