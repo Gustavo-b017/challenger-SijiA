@@ -4,9 +4,9 @@ import LinksNavegacao from './componentes/menu/navBar/LinksNavegacao';
 
 function App() {
   return (
-    <div >
+    <nav >
       <LinksNavegacao/>
-    </div>
+    </nav>
   );
 }
 
