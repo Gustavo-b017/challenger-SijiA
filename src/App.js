@@ -1,12 +1,18 @@
 // import styled from 'styled-components'
 import LinksNavegacao from './componentes/menu/navBar/LinksNavegacao';
+import Comecar from './memoryGame/Header/comecar/Comecar';
 
 
 function App() {
   return (
-    <nav >
-      <LinksNavegacao/>
-    </nav>
+    <div>
+      <nav >
+        <LinksNavegacao/>
+      </nav>
+
+      <Comecar/>
+
+    </div>
   );
 }
 
