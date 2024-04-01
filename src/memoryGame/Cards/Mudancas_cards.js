@@ -5,12 +5,7 @@ import Comecar from './memoryGame/Header/comecar/Comecar';
 function App() {
   return (
     <div>
-      <nav >
-        <LinksNavegacao/>
-      </nav>
-
-      <Comecar/>
-
+        
     </div>
   );
 }
