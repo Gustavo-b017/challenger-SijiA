@@ -1,4 +1,4 @@
-import { hover } from '@testing-library/user-event/dist/hover';
+import { useState } from 'react';
 import styled from 'styled-components';
 
 
@@ -33,12 +33,36 @@ const Botao_header = styled.button `
   }
 `
 
+const cardImg = [
+  { 'src': '/src/memoryGame/Img/exames-de-sangue.webp'},
+  { 'src': '/src/memoryGame/Img/fica_frio.jfif'},
+  { 'src': '/src/memoryGame/Img/hemodialise.JPG'},
+  { 'src': '/src/memoryGame/Img/lets-go.jfif'},
+  { 'src': '/src/memoryGame/Img/tomografia.jfif'}
+]
+
+
 
 function Comecar() {
+
+  const [cards, setCards] = useState([])
+  const [turns, setTurns] = useState(0)
+
+  const shuffleCards = () => {
+    const shuffleCards = [ ...cardImg, ...cardImg]
+      .sort(() => Math.random() - 0.5)
+      .map((card) => ({ ...card, id: Math.random() }))
+
+    setCards(shuffleCards)
+    setTurns(0)
+  }
+
+  console.log(cards, turns)
+
   return (
     <Div_header>
       <H1_header>Vai que é tua!</H1_header>
-      <Botao_header>Novo jogo</Botao_header>
+      <Botao_header onClick={shuffleCards}>Novo jogo</Botao_header>
     </Div_header>
   );
 }
