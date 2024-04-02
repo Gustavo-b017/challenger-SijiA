@@ -1,56 +1,28 @@
-import styled from 'styled-components'
 import ContraCapa from '../Img/espaco.jpg'
+import './Cartas.css'
 
-
-const Cartas = styled.div `
-  position: relative;
-`
-
-const CartaFront = styled.img `
-  width: 100%;
-  min-height: 6rem;
-  object-fit: cover;
-  display: block;
-  border: 2px solid #fff;
-  border-radius: 1rem;
-`
-const CartaBack = styled.img `
-  width: 100%;
-  min-height: 6rem;
-  display: block;
-  object-fit: cover;
-  border: 2px solid #fff;
-  border-radius: 1rem;
-`
-const ContainerImg = styled.div `
-  width: 1fr;
-`
-
-
-export default function SoloCard({card, handleChoice}){
+export default function SoloCard({card, handleChoice, flipped, disabled}){
   
   const handleClick = () => {
+    if (!disabled){
     handleChoice(card)
+    }
   }
   
   return(
-    <Cartas>
-      <div>
-        <ContainerImg>
-          <CartaFront src={card.src} />
-        </ContainerImg>
+    <div className='card'>
+
+      <div className={flipped ? "flipped" : ''}>
+          
+          <img className='front' src={card.src} />
         
-        <ContainerImg>
-          <CartaBack
+          <img
+            className='back'
             src={ContraCapa} 
             onClick={handleClick}
             alt='contra capa'
           />
-        </ContainerImg>
-        
-        
-
       </div>
-    </Cartas>
+    </div>
   );
 }

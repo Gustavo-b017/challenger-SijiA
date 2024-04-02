@@ -49,18 +49,26 @@ const PosicaoCartas = styled.div `
   width: 80%;
 `
 
+const P_jogadas = styled.p `
+  font-size: 2rem;
+  color: #5fe36a;
+`
+
 function BtnComecar() {
 
   const [cards, setCards] = useState([])
   const [turns, setTurns] = useState(0)
   const [choiceOne, setChoiceOne] = useState(null)
   const [choiceTwo, setChoiceTwo] = useState(null)
+  const [disabled, setDisabled] = useState(false)
 
   const Embaralhar = () => {
     const EmbaralharCards = [ ...cardImg, ...cardImg]
       .sort(() => Math.random() - 0.5)
       .map((card) => ({ ...card, id: Math.random() }))
 
+    setChoiceOne(null)
+    setChoiceTwo(null)
     setCards(EmbaralharCards)
     setTurns(0)
   }
@@ -72,6 +80,7 @@ function BtnComecar() {
   // compara as duas cartas
   useEffect(() => {
     if (choiceOne && choiceTwo) {
+      setDisabled(true)
       if (choiceOne.src === choiceTwo.src) {
         setCards(prevCards => {
           return prevCards.map(card => {
@@ -86,10 +95,8 @@ function BtnComecar() {
         })
         resetTurn()
       }
-
       else {
-        
-        resetTurn()
+        setTimeout(() => resetTurn(), 1000)
       }
     }
   }, [choiceOne, choiceTwo])
@@ -98,10 +105,17 @@ function BtnComecar() {
 
   // retetar as jogadas e adicionar umais um turno
   const resetTurn = () => {
+    
     setChoiceOne(null)
     setChoiceTwo(null)
     setTurns(prevTrurns => prevTrurns +1)
+    setDisabled(false)
   }
+
+  // comecar jogo automaticamente
+  useEffect(() => {
+    Embaralhar()
+  }, [])
 
   return (
     <Div_Cards>
@@ -114,10 +128,13 @@ function BtnComecar() {
             key={card.id} 
             card={card}  
             handleChoice={handleChoice}
+            flipped = {card === choiceOne || card === choiceTwo || card.matched}
+            disabled={disabled}
           />
         ))}
       </PosicaoCartas>
       
+      <P_jogadas>Número de jogadas: {turns} </P_jogadas>
     </Div_Cards>
   );
 }

@@ -15,7 +15,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: "Quicksand", sans-serif;
     list-style: none;
     text-decoration: none;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 
   body{
