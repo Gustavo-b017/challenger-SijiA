@@ -56,6 +56,7 @@ function BtnComecar() {
   const [choiceOne, setChoiceOne] = useState(null)
   const [choiceTwo, setChoiceTwo] = useState(null)
 
+  console.log(turns)
   const Embaralhar = () => {
     const EmbaralharCards = [ ...cardImg, ...cardImg]
       .sort(() => Math.random() - 0.5)
