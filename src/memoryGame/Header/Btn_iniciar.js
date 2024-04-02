@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import img_1 from '../Img/deboche.webp'
 import img_2 from '../Img/exames-de-sangue.webp'
@@ -65,6 +65,28 @@ function BtnComecar() {
 
   const handleChoice = (card) => {
     choiceOne ? setChoiceTwo(card) : setChoiceOne(card)
+  }
+
+  // compara as duas cartas
+  useEffect(() => {
+    if (choiceOne && choiceTwo) {
+      if (choiceOne.src === choiceTwo.src) {
+        console.log('as duas cartas fazem par')
+        resetTurn()
+      }
+
+      else {
+        console.log('as cartas nao fazem par')
+        resetTurn()
+      }
+    }
+  }, [choiceOne, choiceTwo])
+
+  // retetar as jogadas e adicionar umais um turno
+  const resetTurn = () => {
+    setChoiceOne(null)
+    setChoiceTwo(null)
+    setTurns(prevTrurns => prevTrurns +1)
   }
 
   return (
