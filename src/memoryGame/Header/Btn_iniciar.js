@@ -2,9 +2,10 @@ import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import img_1 from '../Img/deboche.webp'
 import img_2 from '../Img/exames-de-sangue.webp'
-import img_3 from '../Img/ficaFrio.jpg'
+import img_3 from '../Img/shrek.jpg'
 import img_4 from '../Img/tomografia.jpg'
 import img_5 from '../Img/hemodialise.jpg'
+import img_6 from '../Img/cachorro.jpg'
 import SoloCard from '../Cartas/Cartas';
 
 const Div_Cards = styled.div `
@@ -37,6 +38,7 @@ const cardImg = [
   { 'src' : img_3},
   { 'src' : img_4},
   { 'src' : img_5},
+  { 'src' : img_6},
 ]
 
 const PosicaoCartas = styled.div `
@@ -90,6 +92,7 @@ function BtnComecar() {
   }
 
   return (
+
     <Div_Cards>
       <Botao_header onClick={Embaralhar}>Novo jogo</Botao_header>
 
