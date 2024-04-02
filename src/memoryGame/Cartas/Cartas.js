@@ -8,7 +8,7 @@ const Cartas = styled.div `
 
 const CartaFront = styled.img `
   width: 100%;
-  height: 10rem;
+  min-height: 6rem;
   object-fit: cover;
   display: block;
   border: 2px solid #fff;
@@ -16,14 +16,14 @@ const CartaFront = styled.img `
 `
 const CartaBack = styled.img `
   width: 100%;
-  height: 10rem;
+  min-height: 6rem;
   display: block;
   object-fit: cover;
   border: 2px solid #fff;
   border-radius: 1rem;
 `
 const ContainerImg = styled.div `
-  width: 1fr; 
+  width: 1fr;
 `
 
 
