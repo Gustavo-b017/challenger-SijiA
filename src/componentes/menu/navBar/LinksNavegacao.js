@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Nav_bar = styled.ul`
+const Nav_bar = styled.ul `
   display: flex;
   position: relative;
   transition: 0.5s;
@@ -66,7 +66,7 @@ const Nav_bar_links = styled.a`
   cursor: pointer;
 `
 
-const linksNome = ['HOME','Sore', 'Jogos', 'Informacoes', 'Outros']
+const linksNome = ['HOME','Sobre', 'Jogos', 'Informacoes', 'Outros']
 
 function LinksNavegacao() {
   return (

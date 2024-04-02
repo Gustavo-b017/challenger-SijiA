@@ -1,5 +1,5 @@
 import LinksNavegacao from './componentes/menu/navBar/LinksNavegacao';
-import Comecar from './memoryGame/Header/comecar/Comecar';
+import Comecar from './memoryGame/Header/Comecar';
 
 function App() {
   return (
@@ -9,7 +9,6 @@ function App() {
       </nav>
 
       <Comecar/>
-
     </div>
   );
 }
