@@ -1,11 +1,12 @@
-import { useEffect, useState } from 'react';
-import styled from 'styled-components';
+import { useEffect, useState } from 'react'
+import styled from 'styled-components'
 import img_1 from '../Img/deboche.webp'
 import img_2 from '../Img/exames-de-sangue.webp'
-import img_3 from '../Img/ficaFrio.jpg'
+import img_3 from '../Img/shrek.jpg'
 import img_4 from '../Img/tomografia.jpg'
 import img_5 from '../Img/hemodialise.jpg'
-import SoloCard from '../Cartas/Cartas';
+import img_6 from '../Img/cachorro.jpg'
+import SoloCard from '../Cartas/Cartas'
 
 const Div_Cards = styled.div `
   display: flex;
@@ -32,11 +33,12 @@ const Botao_header = styled.button `
 `
 
 const cardImg = [
-  { 'src' : img_1},
-  { 'src' : img_2},
-  { 'src' : img_3},
-  { 'src' : img_4},
-  { 'src' : img_5},
+  { 'src' : img_1, matched: false},
+  { 'src' : img_2, matched: false},
+  { 'src' : img_3, matched: false},
+  { 'src' : img_4, matched: false},
+  { 'src' : img_5, matched: false},
+  { 'src' : img_6, matched: false}
 ]
 
 const PosicaoCartas = styled.div `
@@ -71,16 +73,28 @@ function BtnComecar() {
   useEffect(() => {
     if (choiceOne && choiceTwo) {
       if (choiceOne.src === choiceTwo.src) {
-        console.log('as duas cartas fazem par')
+        setCards(prevCards => {
+          return prevCards.map(card => {
+            if (card.src === choiceOne.src) {
+              return {...card, matched: true}
+            }
+
+            else {
+              return card
+            }
+          })
+        })
         resetTurn()
       }
 
       else {
-        console.log('as cartas nao fazem par')
+        
         resetTurn()
       }
     }
   }, [choiceOne, choiceTwo])
+
+  console.log(cards)
 
   // retetar as jogadas e adicionar umais um turno
   const resetTurn = () => {
@@ -91,7 +105,8 @@ function BtnComecar() {
 
   return (
     <Div_Cards>
-      <Botao_header onClick={Embaralhar}>Novo jogo</Botao_header>
+      
+      <Botao_header onClick={Embaralhar}> Novo jogo </Botao_header>
 
       <PosicaoCartas>
         {cards.map(card => (
