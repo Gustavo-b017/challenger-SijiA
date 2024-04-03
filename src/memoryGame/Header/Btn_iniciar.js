@@ -8,6 +8,9 @@ import img_5 from '../Img/hemodialise.jpg'
 import img_6 from '../Img/cachorro.jpg'
 import SoloCard from '../Cartas/Cartas'
 
+
+
+
 const Div_Cards = styled.div `
   display: flex;
   align-items: center;
