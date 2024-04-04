@@ -7,7 +7,7 @@ const Div_header = styled.main `
   align-items: center;
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 100%;
 `
 
 const H1_header = styled.div `
