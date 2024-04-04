@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+// atribua o caminho de uma pagina js a uma variavel que sera chamada em uma lista
+import memoria from '../../../../memoryGame/Header/Comecar'
 
 const Nav_bar = styled.ul `
   display: flex;
@@ -65,15 +67,20 @@ const Nav_bar_links = styled.a`
   color: #fff;
   cursor: pointer;
 `
-
-const linksNome = ['HOME','Sobre', 'Jogos', 'Informacoes', 'Outros']
+// lista que contem o nome do links
+const linksNome = ['HOME','Sobre', 'Jogo da Memoria','Quiz', 'Informacoes', 'Outros']
+// lista onde fica os rectivos links, onde os nomes sao importados a cima
+const linksLinks = ["#", '#', memoria, '#', '#', '#']
 
 function LinksNavegacao() {
   return (
     <Nav_bar>
+      {/* le uma lista e cada elemento e salvo no parametro do .map, como uma especie mais simples do for */}
         { linksNome.map ( (texto) => (
-            <Nav_bar_itens> 
-              <Nav_bar_links href='#'>{texto}</Nav_bar_links>
+          // cria uma tag do html (li) ja estilizada a cada itam da lista que foi chamada com o .map 
+           <Nav_bar_itens>  
+              {/* cria um 'a' do html ja estilizado, cuja o href sera do mesmo index que o nome do li, onde ira 'pegar' o nome que aparecera no a junto com seu respectivo link*/}
+              <Nav_bar_links href={linksLinks}>{texto}</Nav_bar_links>
             </Nav_bar_itens>
         ) ) }
     </Nav_bar>

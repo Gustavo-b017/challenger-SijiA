@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import BtnComecar from './Btn_iniciar';
 
 
-const Div_header = styled.div `
+const Div_header = styled.main `
   margin: 30px auto ;
   align-items: center;
   display: flex;

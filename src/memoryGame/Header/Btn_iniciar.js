@@ -11,7 +11,7 @@ import SoloCard from '../Cartas/Cartas'
 
 
 
-const Div_Cards = styled.div `
+const Div_Cards = styled.section `
   display: flex;
   align-items: center;
   justify-content: center;

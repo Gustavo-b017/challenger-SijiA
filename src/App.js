@@ -1,4 +1,4 @@
-import LinksNavegacao from './componentes/menu/navBar/LinksNavegacao';
+import LinksNavegacao from './componentes/Conteudos/menu/navBar/LinksNavegacao.js';
 import Comecar from './memoryGame/Header/Comecar';
 
 function App() {
