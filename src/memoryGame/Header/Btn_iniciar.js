@@ -11,7 +11,7 @@ import SoloCard from '../Cartas/Cartas'
 
 
 
-const Div_Cards = styled.div `
+const Div_Cards = styled.section `
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,11 +45,11 @@ const cardImg = [
 ]
 
 const PosicaoCartas = styled.div `
-  margin: 40px 0;
+  margin: 2rem 0;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 2fr);
   grid-gap: 2rem;
-  width: 80%;
+  width: 100%;
 `
 
 const P_jogadas = styled.p `
