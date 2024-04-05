@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 // atribua o caminho de uma pagina js a uma variavel que sera chamada em uma lista
 import memoria from '../../../../memoryGame/Header/Comecar'
+import quiz from '../../../../quiz/QuizPag'
 
 const Nav_bar = styled.ul `
   display: flex;
@@ -70,7 +71,7 @@ const Nav_bar_links = styled.a`
 // lista que contem o nome do links
 const linksNome = ['HOME','Sobre', 'Jogo da Memoria','Quiz', 'Informacoes', 'Outros']
 // lista onde fica os rectivos links, onde os nomes sao importados a cima
-const linksLinks = ["#", '#', memoria, '#', '#', '#']
+const linksLinks = ["#", '#', memoria, quiz, '#', '#']
 
 function LinksNavegacao() {
   return (
