@@ -1,0 +1,128 @@
+.quizSection {
+  width: 100%;
+  background-color: #09001d;
+  position: relative;
+  /* left: 0; */
+  left: -50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .8s ease-in-out;
+  transition-delay: .25s;
+  z-index: 100;
+}
+
+.quizSection.active {
+  left: 0;
+}
+
+.quiz-box{
+  position: relative;
+  width: 500px;
+  background: transparent;
+  border: 2px solid #c40094;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem 1.5rem;
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(.9);
+}
+
+.quiz-box.active{
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1);
+  transition: 1s ease;
+  transition-delay: 1s;
+}
+
+.quiz-box h1{
+  font-size: 2rem;
+  text-align: center;
+  background: linear-gradient(45deg, transparent, #c40094, transparent);
+  border-radius: 6px;
+  margin: .3rem 0;
+} 
+
+.quiz-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 0;
+}
+
+.meioQuiz {
+  border-top: 1px solid #c40094;
+  border-bottom: 1px solid #c40094;
+  padding: 1rem 0;
+}
+
+.quiz-header span {
+  font-size: 1.2rem;
+  font-weight: 500;  
+}
+
+.header-score {
+  background: #c40094;
+  border-radius: 3px;
+  padding: 0.4rem;
+}
+
+.question-text {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.option {
+  width: 100%;
+  padding: 0.8rem;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 3px;
+  font-size: 1.1rem;
+  margin: 1rem 0;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.option:hover {
+  background: rgba(255, 255, 255, .1);
+  border-color:rgba(255, 255, 255, .1);
+}
+
+.quiz-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 0;
+}
+
+.question-total {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.next-btn {
+  padding: 0.8rem 1.5rem;
+  background: rgba(255, 255, 255, .1);
+  border: 2px solid rgba(255, 255, 255, .1);
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  font-weight: 600; 
+  color: rgba(255, 255, 255, .3);
+  cursor: pointer;
+  /* pointer-events: none; */
+  transition: .5s;
+}
+
+
+.next-btn:hover {
+  background: #950170;
+  border-color: #950170;
+  color: #fff;
+}
+
+
