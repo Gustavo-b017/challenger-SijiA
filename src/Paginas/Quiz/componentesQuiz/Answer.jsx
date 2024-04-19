@@ -12,7 +12,7 @@ const Answer = ({ answer, handleAnswerClick, handleEnterPress }) => {
       onClick={handleAnswerClick} // A função para lidar com cliques é passada como prop
       onKeyDown={handleEnterPress} // A função para lidar com a tecla Enter é passada como prop
     >
-      {answer} 
+      {answer}
     </li>
   );
 }

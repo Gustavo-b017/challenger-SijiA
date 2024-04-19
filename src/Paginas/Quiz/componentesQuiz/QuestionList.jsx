@@ -18,8 +18,8 @@ function QuestionList ({ questions, handleAnswerClick, handleEnterPress }) {
             handleAnswerClick={handleAnswerClick} // A função para lidar com cliques na resposta é passada como prop
             handleEnterPress={handleEnterPress} // A função para lidar com a tecla Enter é passada como prop
           />
-        );
-      })}
+        );})}
+
     </ul>
   );
 }

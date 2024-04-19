@@ -123,11 +123,6 @@ class QuizApp extends Component {
     const restOfQuestions = questions.slice(1);
     const currentStep = step - 1;
     const tries = userAnswers[currentStep].tries;
-
-    // AQUI VC TEM QUE PEGAR E TIRAR DE TODAS LI's A CLASSE .wrong e .right
-    // const liQuestionAnswer = document.querySelectorAll(".question-answer");
-    // liQuestionAnswer.classList.remove("wrong");
-    // liQuestionAnswer.classList.remove("right");
     
     this.setState({
       step: step + 1,
