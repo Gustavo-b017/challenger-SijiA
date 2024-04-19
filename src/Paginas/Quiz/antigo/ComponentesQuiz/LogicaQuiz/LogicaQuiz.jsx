@@ -1,4 +1,4 @@
-import '../../Quiz.jsx'
+import '../../../Quiz.jsx'
 import '../PopUp/PopupInfo.jsx'
 import { tomografia } from '../dados/tomografia.js'
 import '../QuizPerguntas/QuizPerguntas.css'

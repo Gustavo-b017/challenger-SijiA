@@ -106,6 +106,13 @@ export default function Menu() {
             <Links>Quiz</Links>
           </Link>
         </Nav_bar_itens>
+        
+        <Nav_bar_itens> 
+          <Link to='QuizMelhorado' >
+            <Links>Quiz 2</Links>
+          </Link>
+        </Nav_bar_itens>
+      
       </Nav_bar>
     </Nav>
   )

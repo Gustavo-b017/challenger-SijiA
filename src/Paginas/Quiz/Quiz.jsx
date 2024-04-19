@@ -1,8 +1,8 @@
-import PopUpInfo from './ComponentesQuiz/PopUp/PopupInfo.jsx';
-import './Quiz.css';
-import {StartBtn} from './ComponentesQuiz/LogicaQuiz/LogicaQuiz'
-import QuizPerguntas from './ComponentesQuiz/QuizPerguntas/QuizPerguntas.jsx';
-
+import PopUpInfo from './antigo/ComponentesQuiz/PopUp/PopupInfo.jsx';
+import './antigo/Quiz.css'
+import {StartBtn} from './antigo/ComponentesQuiz/LogicaQuiz/LogicaQuiz.jsx'
+import QuizPerguntas from './antigo/ComponentesQuiz/QuizPerguntas/QuizPerguntas.jsx';
+import './style.css';
 
 export default function Quiz() {
   return (

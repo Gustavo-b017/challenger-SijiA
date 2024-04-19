@@ -6,6 +6,7 @@ import Memoria from './Paginas/Memoria/Memoria.jsx'
 import PageNotFound from './Paginas/PageNotFound/PageNotFound.jsx'
 import Quiz from './Paginas/Quiz/Quiz.jsx'
 import './geral.css'
+import QuizNovo from './Paginas/Quiz/QuizNovo.jsx'
 
 const router = createBrowserRouter([{
   path: '/',
@@ -14,6 +15,7 @@ const router = createBrowserRouter([{
     {index: true, element: <Memoria/>},
     {path:'Memoria', element: <Memoria/>},
     {path:'Quiz', element: <Quiz/>},
+    {path:'QuizMelhorado', element: <QuizNovo />},
     {path:'*', element: <PageNotFound/>},
   ]
 }])
