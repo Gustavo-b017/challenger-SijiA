@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Question from './Question';
-import '../style.css';
 
 // O componente QuestionList recebe três props: questions, handleAnswerClick e handleEnterPress
 function QuestionList ({ questions, handleAnswerClick, handleEnterPress }) {

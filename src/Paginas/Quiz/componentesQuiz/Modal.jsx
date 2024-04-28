@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../style.css';
 
 // O componente Modal recebe uma prop: modal, que é um objeto contendo state, praise e points
 function Modal ({ modal: { state, praise, points } }) {

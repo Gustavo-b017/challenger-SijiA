@@ -5,7 +5,6 @@ import Modal from './Modal';
 import Results from './Results';
 import shuffleQuestions from '../helpers/shuffleQuestions';
 import {questoesGeral} from '../data/quiz-data';
-import '../style.css';
 
 class QuizApp extends Component {
   state = {

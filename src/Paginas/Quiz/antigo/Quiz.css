@@ -8,7 +8,8 @@ body{
 }
 
 .home {
-  min-height: 90vh;
+  border: 1px solid red;
+  height: 85vh;
   width: 100%;
   display: flex;
   justify-content: center;

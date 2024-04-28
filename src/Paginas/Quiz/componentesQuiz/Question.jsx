@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import Answer from './Answer';
-import '../style.css';
 
 // O componente Question recebe quatro props: question, answers, handleAnswerClick e handleEnterPress
 function Question ({ question, answers, handleAnswerClick, handleEnterPress }) {
@@ -15,12 +14,6 @@ function Question ({ question, answers, handleAnswerClick, handleEnterPress }) {
         {answers.map((answer, index) => {
           // Para cada resposta em answers, um componente Answer é renderizado
           return (
-            // <Answer
-            //     key={index}
-            //     answer={answer}
-            //     handleAnswerClick={() => handleAnswerClick(index)}
-            //     handleEnterPress={() => handleEnterPress(index)}
-            //   />
             <Answer
               key={index} // A prop key é necessária ao renderizar listas em React
               answer={answer} // A resposta atual é passada como prop
