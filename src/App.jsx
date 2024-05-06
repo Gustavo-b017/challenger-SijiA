@@ -3,6 +3,7 @@ import Rodape from './ComponetesGerais/Footer/Footer';
 import { Outlet } from 'react-router-dom';
 import styled from 'styled-components';
 import Fundo from './ComponetesGerais/img/background.jpg';
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 const Body_geral = styled.body `
   display: flex;
