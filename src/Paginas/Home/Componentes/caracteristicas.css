@@ -1,0 +1,35 @@
+.container-nuvens {
+
+    margin-top: -95px;
+    background-color: #42A6D3;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    /* Adapta os elementos conforme o tamanho da tela */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+}
+
+.nuvem {
+    position: relative;
+    transition: transform 100ms;
+}
+
+.nuvem:hover {
+    transform: scale(1.08);
+}
+
+.nuvens-img {
+    width: 100%;
+}
+
+.nuvem-text {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    color: #42A6D3;
+    font-size: 2rem;
+    font-weight: bold;
+}
