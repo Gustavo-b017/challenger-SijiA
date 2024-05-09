@@ -1,12 +1,46 @@
-.card-style {
-    background-color: aqua;
+.container-sobre {
+
+    position: relative;
+
+    margin: 20px auto;
     width: 80%;
+    background-color: #42A6D3;
+
 }
 
-.card-pai {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
+.conteudo-sobre {
+
+    margin: 0 auto;
+    background-color: #42A6D3;
+    display: grid;
+    justify-content: space-between;
+
+    grid-template-rows: repeat(auto-fit, auto);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 20px;
+
+    border: solid 2px red;
+
+}
+
+.titulo-sobre {
+    padding: 50px 50px 50px 0;
+    border: solid 2px rgb(0, 255, 64);
+}
+
+.carrosel-sobre {
+    width: 100%;
+
+    border: solid 2px rgb(255, 0, 200);
+}
+
+.cards {
+    width: 100%;
+
+    border: solid 2px rgb(236, 142, 10);
+}
+
+.card-style {
+    background-color: aqua;
 }
