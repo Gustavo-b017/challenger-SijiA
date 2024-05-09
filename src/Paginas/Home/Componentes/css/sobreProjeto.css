@@ -1,0 +1,65 @@
+
+section {
+
+    background-color: #42A6D3;
+}
+
+.container-sobre {
+
+    margin: auto;
+    padding: 10vh 0 15vh 0;
+    bottom: 10vh;
+    width: 80%;
+
+}
+
+.conteudo-sobre {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* border: solid 2px red; */
+
+}
+
+.titulo-sobre h1 {
+    padding: 50px 50px 50px 0;
+    font-size: 6rem;
+    color: #D1F4F6;
+    font-weight: bold;
+}
+
+.carrosel-sobre {
+    width: 64.5%;
+    /* border: solid 2px rgb(255, 0, 200); */
+}
+
+.carrosel-sobre img {
+    border-radius: 20px;
+}
+
+.cards {
+    width: 34%;
+    /* border: solid 2px rgb(236, 142, 10); */
+}
+
+.card-header:hover {
+    background-color: #F1E49D;
+    color: #6CBDDB;
+    border-radius: 10px;
+}
+
+.cards button {
+    color: white;
+    font-size: 1.60rem;
+    font-weight: bold;
+}
+
+.card-style {
+    background-color: #6CBDDB;
+    border-radius: 10px;
+
+    color: white;
+    font-size: 1.30rem;
+}

@@ -1,0 +1,105 @@
+.grupo {
+
+    background-color:#F1E49D;
+    height: auto;
+}
+
+.titulo-grupo {
+    margin: 0 auto;
+    padding: 10vh 0 5vh 0;
+    width: 80%;
+}
+
+.titulo-grupo h1{
+    font-size: 5rem;
+    color: #6CBDDB;
+    font-weight: bold;
+}
+
+.container-grupo {
+    
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 25px;
+
+    margin: auto;
+    padding: 5vh 0 15vh 0;
+    min-width: 10%;
+    max-width: 80%;
+    
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card-grupo {
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 300px;
+    position: relative;
+    background-color: #6CBDDB;
+    color: #004AAD;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgb(0, 0, 0 , 0.15);
+    transition: 0.5s;
+}
+
+.card-grupo h2 {
+    padding: 5px; 
+    font-weight: bold;
+}
+
+.card-grupo:hover {
+    height: 450px;
+    background-color: #B0E1EE;
+}
+
+.card-grupo .img-box {
+    position: absolute;
+    width: 250px;
+    height: auto;
+    top: 0px;
+    transition: 0.5s;
+}
+
+.card-grupo:hover .img-box {
+
+    top: -120px;
+    scale: 0.75;
+}
+
+.card-grupo .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.card-grupo .conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    padding: 0 25px; 
+    font-size: 1.2rem;
+    text-align: center;
+    height: 50px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card-grupo:hover .conteudo {
+    top: 130px;
+    height: 300px;
+}
+
+.card-grupo .leia-mais {
+    background-color: #42A6D3;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}

@@ -1,4 +1,4 @@
-import './caracteristicas.css'
+import './css/caracteristicas.css'
 import nuvem1 from '../Img/nuvem1.png'
 import nuvem2 from '../Img/nuvem2.png'
 import nuvem3 from '../Img/nuvem3.png'
