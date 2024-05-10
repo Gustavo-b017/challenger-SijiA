@@ -175,6 +175,40 @@ export default function Menu() {
         </div>
       </div>
     </nav>
+
+    {/* <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <h2 class="logo">Vitória<span>luz</span></h2>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <a href="https://wa.link/rgsk0l" class="contatoBtn">Entre em contato cmg</a>
+                
+                <ul class="d-flex justify-content-end me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="#quemsoueu">Quem sou eu</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#ajuda">Como você pode me ajudar </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#contato">Contato</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#redessociais">Redes sociais</a>                            
+                    </li>
+                </ul>
+                
+                
+                </div>
+            </div>
+        </nav> */}
   </div>
   )
 }
