@@ -1,30 +1,16 @@
 import './menu.css'
-import {styled} from 'styled-components'
 import {Link} from 'react-router-dom'
 import logo from '../img/logo.png'
-
-const a  = styled.a `
-  padding: 5px;
-  text-transform: uppercase;
-  font-size: 18px;
-  color: #fff;
-  text-decoration: none;
-  cursor: pointer;
-`
-
-const LogoImg = styled.img `
-  width: 100px;
-  height: 100px;
-`
 
 export default function Menu() {
   return (
   <div>
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    {/* bg-body-tertiary */}
+    <nav className="navbar navbar-expand-lg ">
       <div className="container justify-content-space-between">
         <Link to='/' >
           <a className='menuLink' >
-            <LogoImg src={logo} alt="" />
+            <img className='imgMenu' src={logo} alt="" />
           </a >
         </Link>
 

@@ -11,6 +11,12 @@
     max-width: 1000px;
 }
 
+section {
+    background: none !important;
+    margin: 0;
+    padding: 0;
+}
+
 .tituloMemoria {
     font-size: 2.2rem;  
     font-weight: 700;

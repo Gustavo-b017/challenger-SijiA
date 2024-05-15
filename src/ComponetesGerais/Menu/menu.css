@@ -59,25 +59,30 @@
 }
 
 .menuItens2 {
-    &:hover {
-        transform: translatex(15px);
-    }
+  &:hover {
+      transform: translatex(15px);
+  }
 }
 
 Link {
-    color: #fff;
-    text-decoration: none;
-    border: 1px solid red;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid red;
 }
 
 .menuLink {  
-    padding: 5px;
-    text-transform: uppercase;
-    font-size: 18px;
-    color: #fff;
-    cursor: pointer;
+  padding: 5px;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
 }
 
 a {
-    text-decoration: none !important;
+  text-decoration: none !important;
+}
+
+.imgMenu {
+  width: 100px;
+  height: 100px;
 }
