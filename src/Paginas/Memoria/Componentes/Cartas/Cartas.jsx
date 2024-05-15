@@ -1,4 +1,4 @@
-import ContraCapa from '../../Img/espaco.jpg'
+import ContraCapa from '../../Img/contra-capa.svg'
 import './Cartas.css'
 
 export default function SoloCard({card, handleChoice, flipped, disabled}){

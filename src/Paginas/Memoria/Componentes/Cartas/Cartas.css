@@ -7,7 +7,7 @@
   height: 12rem;
   display: block;
   object-fit: cover;
-  border: 2px solid #ffffff;
+  border: 8px solid #FFDE59;
   border-radius: 1rem;
 
   @media screen and (max-width: 800px){

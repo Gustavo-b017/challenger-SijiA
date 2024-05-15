@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import LogicaMemoria from './LogicaMemoria';
 
-
 const Div_header = styled.main `
   margin: 30px auto ; 
   align-items: center;
