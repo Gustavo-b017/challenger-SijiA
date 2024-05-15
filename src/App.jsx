@@ -2,7 +2,6 @@ import Menu from './ComponetesGerais/Menu/Menu';
 import Rodape from './ComponetesGerais/Footer/Footer';
 import { Outlet } from 'react-router-dom';
 import styled from 'styled-components';
-import Fundo from './ComponetesGerais/img/logo.png';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 const Body_geral = styled.body `
@@ -10,7 +9,7 @@ const Body_geral = styled.body `
   flex-direction: column;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(#fff , #42A6D3 20%);
+  background: linear-gradient(#fff 15% , #42A6D3 35%);
   font-family: 'Roboto', sans-serif;
   background-size: cover;
   background-position: center;
@@ -24,8 +23,8 @@ function App() {
  
   return (
     <Body_geral>
-       <Menu/>
-      {/*<img src={Fundo} alt="" /> */}
+      <Menu/>
+      
       <Outlet/>
       
       <Rodape/>

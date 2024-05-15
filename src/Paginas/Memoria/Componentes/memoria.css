@@ -1,0 +1,119 @@
+
+/* jogo da memoria  */
+
+/* pagina -- MemoriaHemodialize */
+.mainMemoria {
+    margin: 30px auto ; 
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1000px;
+}
+
+section {
+    background: none !important;
+    margin: 0;
+    padding: 0;
+}
+
+.tituloMemoria {
+    font-size: 2.2rem;  
+    font-weight: 700;
+    color: #5fe36a;
+}
+
+/* pagina -- LogicaMemoria */
+.pJogadas{
+    font-size: 2rem;
+    color: #5fe36a;
+}
+
+.divCartasMemoria {
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    width: 100%;
+
+    @media screen and (max-width: 800px){
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.buttonMemoriaIniciar {
+    background: none;
+    border: 2px solid #fff;
+    margin: 10px 0;
+    padding: 6px 12px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+  
+    &:hover{
+      background-color: #5fe36a;
+      color: #c83989;
+    }
+}
+
+.sectionMemoriaHemodialize {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* pagina -- Cartas */
+
+.card {
+    position: relative;
+  }
+
+.card img {
+width: 100%;
+height: 12rem;
+display: block;
+object-fit: cover;
+border: 8px solid #FFDE59;
+border-radius: 1rem;
+
+@media screen and (max-width: 800px){
+    height: 18rem;
+}
+}
+
+.card .front {
+transform: rotateY(90deg);
+position: absolute;
+transition: all ease-in 0.2s;
+}
+
+.flipped .front {
+transform: rotateY(0deg);
+transition-delay: 0.2s;
+}
+
+.card .back {
+transition: all ease-in 0.2s;
+transition-delay: 0.2s;
+}
+
+.flipped .back {
+transform: rotateY(90deg);
+transition-delay: 0s ;
+}
+
+/* pagina -- Memoria (a principal fora de componentes) */
+.mainMemoria {
+    padding: 2% 5%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    
+    @media screen and (max-width: 800px) {
+        padding: 1% 2%;
+        margin: 0 auto;
+    }
+}
