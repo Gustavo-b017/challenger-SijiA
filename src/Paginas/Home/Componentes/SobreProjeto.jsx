@@ -10,6 +10,7 @@ export default function SobreProjeto() {
   return (
 
     <section className='sobre'>
+    <div className="cloud">
         <div className="container-sobre">
 
             <div className='titulo-sobre'>
@@ -120,6 +121,7 @@ export default function SobreProjeto() {
                 </div>
             </div>
         </div>
+    </div>
     </section>
   )
 }
