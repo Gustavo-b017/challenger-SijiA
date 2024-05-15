@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import Inicio from './Componentes/Inicio';
+import { Outlet } from 'react-router-dom';
+import Inicio from './Componentes/MemoriaHemodialize';
 
 const Conteudo = styled.main `
   padding: 2% 5%;
@@ -16,8 +17,8 @@ const Conteudo = styled.main `
 function Memoria() {
   return (
     <Conteudo>
-      <Inicio/>
-    </Conteudo> 
+      <Outlet/>
+    </Conteudo>
   );
 }
 

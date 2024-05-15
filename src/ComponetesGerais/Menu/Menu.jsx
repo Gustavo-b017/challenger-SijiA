@@ -3,108 +3,7 @@ import {styled} from 'styled-components'
 import {Link} from 'react-router-dom'
 import logo from '../img/logo.png'
 
-const Nav_bar_itens = styled.li`
-  position: relative;
-  transition: 0.5s;
-  background: #2e3133;
-  padding: 10px 6px;
-
-  &:hover {
-    background: #33a3ee;
-    transform: translateY(15px);
-    transition: 0.5s;
-  }
-
-  &:before {
-    content: '';
-    position: absolute;
-    left: 100%;
-    width: 10px;
-    height: 100%;
-    background: #2e3133 ;
-    transform: skewY(60deg);
-    transform-origin: right;
-    transition: 0.5s;
-    bottom: -16px;
-  }
-
-  &:hover::before {
-    background: #1f5378;
-    transition: 0.5s;
-  }
-
-  &:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    background: #35383e;
-    transform-origin: bottom;
-    transform: 0.5s;
-    bottom: -15px;
-    left: 8px;
-    height: 15px;
-    transform: skewX(27deg);
-  
-  }
-  
-  &:hover:after {
-    background: #2982b9;
-    transition: 0.5s;
-  }
-`
-
-const Nav_bar_itens2 = styled.li`
-  position: relative;
-  transition: 0.5s;
-  background: #2e3133;
-  padding: 10px 6px;
-  margin: 2px 12px ;
-
-  &:hover {
-    background: #33a3ee;
-    transform: translateY(15px);
-    transition: 0.5s;
-  }
-
-  &:before {
-    content: '';
-    position: absolute;
-    left: 100%;
-    width: 10px;
-    height: 100%;
-    background: #2e3133 ;
-    transform: skewY(60deg);
-    transform-origin: right;
-    transition: 0.5s;
-    bottom: -16px;
-  }
-
-  &:hover::before {
-    background: #1f5378;
-    transition: 0.5s;
-  }
-
-  &:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    background: #35383e;
-    transform-origin: bottom;
-    transform: 0.5s;
-    bottom: -15px;
-    left: 8px;
-    height: 15px;
-    transform: skewX(27deg);
-  
-  }
-  
-  &:hover:after {
-    background: #2982b9;
-    transition: 0.5s;
-  }
-`
-
-const Links = styled.a `
+const a  = styled.a `
   padding: 5px;
   text-transform: uppercase;
   font-size: 18px;
@@ -121,54 +20,54 @@ const LogoImg = styled.img `
 export default function Menu() {
   return (
   <div>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container justify-content-space-between">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <div className="container justify-content-space-between">
         <Link to='/' >
-          <Links>
+          <a className='menuLink' >
             <LogoImg src={logo} alt="" />
-          </Links>
+          </a >
         </Link>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
         </button>
         
-        <div class="collapse navbar-collapse test" id="navbarNavDropdown">
+        <div className="collapse navbar-collapse test" id="navbarNavDropdown">
           
-          <div class="navbar-nav ">
+          <div className="navbar-nav ">
 
-            <Nav_bar_itens class="nav-item">
-              <Link to='Memoria' >
-                <Links className='active'>Contato</Links>
+            <li className="menuItens">
+              <Link to='/' >
+                <a className='menuLink active'>Contato</a >
               </Link>
-            </Nav_bar_itens>
+            </li>
 
-            <Nav_bar_itens class="nav-item">
-              <Link to='Quiz' >
-                <Links>Sobre</Links>
+            <li className="menuItens">
+              <Link to='/' >
+                <a className='menuLink' >Sobre</a >
               </Link>
-            </Nav_bar_itens>
+            </li>
 
 
-            <li class="nav-item dropdown">
+            <li className="dropdown menuItens">
               
-              <Nav_bar_itens class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <Links>Jogos</Links>
-              </Nav_bar_itens>
+              <li className="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a className='menuLink' >Jogos</a >
+              </li>
 
-              <ul class="dropdown-menu">
+              <ul className="dropdown-menu">
             
-                <Nav_bar_itens2 class="nav-item">
+                <li className="menuItens menuItens2">
                   <Link to='Memoria' >
-                    <Links className='active'>Jogo da Memoria</Links>
+                    <a className='menuLink active'>Jogo da Memoria</a >
                   </Link>
-                </Nav_bar_itens2>
+                </li>
 
-                <Nav_bar_itens2 class="nav-item">
+                <li className="menuItens menuItens2">
                   <Link to='Quiz' >
-                    <Links>Quiz</Links>
+                    <a className='menuLink' >Quiz</a >
                   </Link>
-                </Nav_bar_itens2>
+                </li>
                 
               </ul>
             </li>

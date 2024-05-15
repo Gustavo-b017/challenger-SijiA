@@ -1,39 +1,12 @@
 import { useEffect, useState } from 'react'
-import styled from 'styled-components'
 import img_1 from '../Img/deboche.webp'
 import img_2 from '../Img/exames-de-sangue.webp'
 import img_3 from '../Img/shrek.jpg'
 import img_4 from '../Img/tomografia.jpg'
 import img_5 from '../Img/hemodialise.jpg'
 import img_6 from '../Img/cachorro.jpg'
-import SoloCard from './Cartas/Cartas'
-
-
-
-
-const Div_Cards = styled.section `
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-`
-
-const Botao_header = styled.button `
-  background: none;
-  border: 2px solid #fff;
-  margin: 10px 0;
-  padding: 6px 12px;
-  border-radius: 4px;
-  color: #fff;
-  font-weight: bold;
-  cursor: pointer;
-  font-size: 1rem;
-
-  &:hover{
-    background-color: #5fe36a;
-    color: #c83989;
-  }
-`
+import SoloCard from './Cartas'
+import './memoria.css'
 
 const cardImg = [
   { 'src' : img_1, matched: false},
@@ -43,23 +16,6 @@ const cardImg = [
   { 'src' : img_5, matched: false},
   { 'src' : img_6, matched: false}
 ]
-
-const PosicaoCartas = styled.div `
-  margin: 2rem 0;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 2rem;
-  width: 100%;
-
-  @media screen and (max-width: 800px){
-    grid-template-columns: repeat(2, 1fr);
-  }
-`
-
-const P_jogadas = styled.p `
-  font-size: 2rem;
-  color: #5fe36a;
-`
 
 export default function LogicaMemoria() {
 
@@ -125,11 +81,11 @@ export default function LogicaMemoria() {
   }, [])
 
   return (
-    <Div_Cards>
+    <section className='sectionMemoriaHemodialize'>
       
-      <Botao_header onClick={Embaralhar}> Novo jogo </Botao_header>
+      <button className='buttonMemoriaIniciar' onClick={Embaralhar}> Novo jogo </button>
 
-      <PosicaoCartas>
+      <div className='divCartasMemoria'>
         {cards.map(card => (
           <SoloCard 
             key={card.id} 
@@ -139,9 +95,9 @@ export default function LogicaMemoria() {
             disabled={disabled}
           />
         ))}
-      </PosicaoCartas>
+      </div>
       
-      <P_jogadas>Número de jogadas: {turns} </P_jogadas>
-    </Div_Cards>
+      <p className='pJogadas' >Número de jogadas: {turns} </p>
+    </section>
   );
 }

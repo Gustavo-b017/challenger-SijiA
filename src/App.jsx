@@ -2,7 +2,6 @@ import Menu from './ComponetesGerais/Menu/Menu';
 import Rodape from './ComponetesGerais/Footer/Footer';
 import { Outlet } from 'react-router-dom';
 import styled from 'styled-components';
-import Fundo from './ComponetesGerais/img/logo.png';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 const Body_geral = styled.body `
@@ -24,8 +23,8 @@ function App() {
  
   return (
     <Body_geral>
-       <Menu/>
-      {/*<img src={Fundo} alt="" /> */}
+      <Menu/>
+      
       <Outlet/>
       
       <Rodape/>
