@@ -64,37 +64,50 @@
 .card {
     position: relative;
   }
-  
-  .card img {
-    width: 100%;
-    height: 12rem;
-    display: block;
-    object-fit: cover;
-    border: 8px solid #FFDE59;
-    border-radius: 1rem;
-  
-    @media screen and (max-width: 800px){
-      height: 18rem;
+
+.card img {
+width: 100%;
+height: 12rem;
+display: block;
+object-fit: cover;
+border: 8px solid #FFDE59;
+border-radius: 1rem;
+
+@media screen and (max-width: 800px){
+    height: 18rem;
+}
+}
+
+.card .front {
+transform: rotateY(90deg);
+position: absolute;
+transition: all ease-in 0.2s;
+}
+
+.flipped .front {
+transform: rotateY(0deg);
+transition-delay: 0.2s;
+}
+
+.card .back {
+transition: all ease-in 0.2s;
+transition-delay: 0.2s;
+}
+
+.flipped .back {
+transform: rotateY(90deg);
+transition-delay: 0s ;
+}
+
+/* pagina -- Memoria (a principal fora de componentes) */
+.mainMemoria {
+    padding: 2% 5%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    
+    @media screen and (max-width: 800px) {
+        padding: 1% 2%;
+        margin: 0 auto;
     }
-  }
-  
-  .card .front {
-    transform: rotateY(90deg);
-    position: absolute;
-    transition: all ease-in 0.2s;
-  }
-  
-  .flipped .front {
-    transform: rotateY(0deg);
-    transition-delay: 0.2s;
-  }
-  
-  .card .back {
-    transition: all ease-in 0.2s;
-    transition-delay: 0.2s;
-  }
-  
-  .flipped .back {
-    transform: rotateY(90deg);
-    transition-delay: 0s ;
-  }
+}
