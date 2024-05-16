@@ -1,5 +1,4 @@
 import './css/grupo.css'
-import logo from '../../../ComponetesGerais/img/logo.png'
 import felipe from '../Img/perfil_felipe.png'
 import gilson from '../Img/perfil_gilson.png'
 import gustavo from '../Img/perfil_gustavo.png'
