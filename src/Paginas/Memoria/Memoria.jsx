@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom';
-import './Componentes/memoria.css';
+import './Componentes/css/memoria.css';
 
 
 function Memoria() {
