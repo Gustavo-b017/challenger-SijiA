@@ -51,9 +51,9 @@ export default function SobreProjeto() {
                     </div>
 
                     {/* Abas */}
-                    <div class="cards accordion" id="accordionExample">
+                    <div class="cards-proposito accordion" id="accordionExample">
                         {/* card que fica visivel */}
-                        <div class="card-style card">
+                        <div class="card-proposito-style card">
 
                             {/* titulo */}
                             <div class="card-header" id="headingOne">
@@ -78,7 +78,7 @@ export default function SobreProjeto() {
                             </div>
                         </div>
 
-                        <div class="card-style card">
+                        <div class="card-proposito-style card">
                             <div class="card-header" id="headingTwo">
                                 <h2 class="mb-0">
                                     <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -98,7 +98,7 @@ export default function SobreProjeto() {
                             </div>
                         </div>
 
-                        <div class="card-style card">
+                        <div class="card-proposito-style card">
                             <div class="card-header" id="headingThree">
                             <h2 class="mb-0">
                                 <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
