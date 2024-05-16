@@ -1,21 +1,4 @@
 
-
-/* pagina -- MemoriaHemodialize */
-.mainMemoria {
-    margin: 30px auto ; 
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 1000px;
-}
-
-.tituloMemoria {
-    font-size: 2.2rem;  
-    font-weight: 700;
-    color: #5fe36a;
-}
-
 /* pagina -- LogicaMemoria */
 .pJogadas{
     font-size: 2rem;

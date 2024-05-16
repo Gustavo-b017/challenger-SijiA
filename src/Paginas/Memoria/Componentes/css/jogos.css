@@ -1,0 +1,50 @@
+/* pagina - jogos da memória */
+
+/* ------------------ BANNER ------------------ */
+
+.banner-jogo {
+    margin: 0 auto 5%;
+    padding: 0;
+    width: 60vw;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5%;
+
+}
+
+.titulo-jogo img{
+    width: 100%;
+    height: auto;
+}
+
+.icon-jogo img {
+    width: 100%;
+    height: auto;
+}
+
+.memoria-inicio h1{
+    padding: 4rem 0 3rem 0;
+    font-size: 2.5rem;
+}
+
+
+
+.tituloMemoria {
+    font-size: 2.2rem;  
+    font-weight: 700;
+    color: #5fe36a;
+}
+
+/* ------------------ JOGO ------------------ */
+
+.jogoMemoria {
+    margin: 0 auto ; 
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1000px;
+}
