@@ -6,7 +6,7 @@ import img_4 from '../Img/tomografia.jpg'
 import img_5 from '../Img/hemodialise.jpg'
 import img_6 from '../Img/cachorro.jpg'
 import SoloCard from './Cartas'
-import './css/memoria.css';
+import './css/jogos.css';
 
 const cardImg = [
   { 'src' : img_1, matched: false},
@@ -83,8 +83,6 @@ export default function LogicaMemoria() {
   return (
     <section className='sectionMemoriaHemodialize'>
       
-      <button className='buttonMemoriaIniciar' onClick={Embaralhar}> Novo jogo </button>
-
       <div className='divCartasMemoria'>
         {cards.map(card => (
           <SoloCard 
@@ -97,7 +95,13 @@ export default function LogicaMemoria() {
         ))}
       </div>
       
-      <p className='pJogadas' >Número de jogadas: {turns} </p>
+      <div className='controleJogoMemoria'>
+        <p className='pJogadas' >Número de jogadas: {turns} </p>
+        <div className="buttonsMemoria">
+          <button className='buttonMemoriaIniciar' onClick={Embaralhar}> Novo jogo </button>
+          <button className='buttonMemoriaSair' onClick={Embaralhar}> Sair </button>
+        </div>
+      </div>
     </section>
   );
 }

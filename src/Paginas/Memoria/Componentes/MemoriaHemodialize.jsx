@@ -15,9 +15,9 @@ function MemoriaHemodialize() {
           <img src={icon_hemograma} className='img-fluid' alt="icon hemograma" />
         </div>
       </div>
-      
+  
       <div className="jogoMemoria">
-        <div className='tituloMemoria'>Vire as cartas para encontrar os pares corelacionados</div>
+      <div className='tituloMemoria'>» Vire as cartas para encontrar os pares corelacionados «</div>
         <LogicaMemoria/>
       </div>
     </main>
