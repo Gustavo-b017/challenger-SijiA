@@ -24,7 +24,7 @@ function EscolherJogo() {
                 <p className="memoriaBtnP">ELETROCARDIOGRAMA (nao funciona)</p> 
               </Link>
             </button>
-
+    
             <button className="memoriaEscolherBtn">
               <Link to="Hemodialize"> 
                 <img className="memoriaEscolherBtnImg" src={raioX} alt="" />
