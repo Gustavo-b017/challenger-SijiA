@@ -17,7 +17,7 @@ function MemoriaHemodialize() {
       </div>
       
       <div className="jogoMemoria">
-        <div className='tituloMemoria'>Virar as cartas para encontrar pares corelacionados</div>
+        <div className='tituloMemoria'>Vire as cartas para encontrar os pares corelacionados</div>
         <LogicaMemoria/>
       </div>
     </main>
