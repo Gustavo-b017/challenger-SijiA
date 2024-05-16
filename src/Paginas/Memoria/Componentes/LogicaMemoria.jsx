@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react'
+import { Link } from "react-router-dom";
+
 import img_1 from '../Img/deboche.webp'
 import img_2 from '../Img/exames-de-sangue.webp'
 import img_3 from '../Img/shrek.jpg'
@@ -99,7 +101,9 @@ export default function LogicaMemoria() {
         <p className='pJogadas' >Número de jogadas: {turns} </p>
         <div className="buttonsMemoria">
           <button className='buttonMemoriaIniciar' onClick={Embaralhar}> Novo jogo </button>
-          <button className='buttonMemoriaSair' onClick={Embaralhar}> Sair </button>
+          <Link to="/Memoria" className='buttonMemoriaSair'> 
+              Sair 
+          </Link>
         </div>
       </div>
     </section>
