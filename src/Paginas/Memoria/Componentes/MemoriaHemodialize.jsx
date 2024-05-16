@@ -1,4 +1,4 @@
-import './memoria.css'
+import './css/memoria.css';
 import LogicaMemoria from './LogicaMemoria';
 
 

@@ -6,7 +6,7 @@ import img_4 from '../Img/tomografia.jpg'
 import img_5 from '../Img/hemodialise.jpg'
 import img_6 from '../Img/cachorro.jpg'
 import SoloCard from './Cartas'
-import './memoria.css'
+import './css/memoria.css';
 
 const cardImg = [
   { 'src' : img_1, matched: false},
