@@ -5,7 +5,7 @@ import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import './geral.css'
 import Memoria from './Paginas/Memoria/Memoria.jsx'
 import PageNotFound from './Paginas/PageNotFound/PageNotFound.jsx'
-import Quiz from './Paginas/Quiz/Quiz.jsx'
+// import Quiz from './Paginas/Quiz/Quiz.jsx'
 import QuizNovo from './Paginas/Quiz/QuizNovo.jsx'
 import Home from './Paginas/Home/Home.jsx'
 import EscolherJogo from './Paginas/Memoria/Componentes/EscolherJogo.jsx'
@@ -26,8 +26,8 @@ const router = createBrowserRouter([{
         }
       ]
     },
-    {path:'Quiz', element: <Quiz/>},
-    {path:'QuizMelhorado', element: <QuizNovo />},
+    // {path:'Quiz', element: <Quiz/>},
+    {path:'Quiz', element: <QuizNovo />},
     {path:'*', element: <PageNotFound/>},
   ]
 }])

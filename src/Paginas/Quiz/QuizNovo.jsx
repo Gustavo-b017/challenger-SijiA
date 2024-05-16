@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css';
+import './quiz.css';
 import QuizApp from './componentesQuiz/QuizApp';
 
 export default function QuizNovo() { 
