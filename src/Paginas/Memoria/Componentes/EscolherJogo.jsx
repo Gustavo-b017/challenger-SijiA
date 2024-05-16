@@ -20,6 +20,8 @@ function EscolherJogo() {
           <img src={icon_memoria} alt="jogo da memória - gif" />
         </div>
       </div>
+
+      <div className="temas">
         <h1>Escolha o tema que deseja jogar:</h1>
         <div className="memoriaEscolherDivBtn">
 
@@ -44,6 +46,7 @@ function EscolherJogo() {
               </Link>
             </button>
         </div>
+      </div>
     </div>
   );
 }

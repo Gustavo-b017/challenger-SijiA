@@ -39,8 +39,14 @@ Azul (fonte) -> #67A3E2
     padding: 4rem 0 3rem 0;
     font-size: 2.5rem;
 }
+
 /* ------------------ CADS COM OS TEMAS ------------------ */
 
+.temas{
+    margin: 0 auto ; 
+    align-items: center;
+    width: 66%;
+}
 .memoriaEscolherDivBtn {
     display: flex;
     flex-wrap: wrap;
