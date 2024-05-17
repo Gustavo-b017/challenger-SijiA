@@ -8,7 +8,6 @@ const Body_geral = styled.body `
   display: flex;
   flex-direction: column;
   width: 100vw;
-  height: 100vh;
   background: linear-gradient(#fff 15% , #42A6D3 35%);
   font-family: 'Roboto', sans-serif;
   background-size: cover;
