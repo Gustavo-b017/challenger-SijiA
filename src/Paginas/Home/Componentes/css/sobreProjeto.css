@@ -83,3 +83,57 @@ section .sobre {
     color: white;
     font-size: 1.30rem;
 }
+
+/* Mobile */
+
+@media (max-width:600px){
+    .titulo-sobre h1{
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .conteudo-sobre {
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    #carouselExampleFade{
+       
+        
+        width:100%;
+    }
+
+    #accordionExample{
+        width:100%;
+        padding-top:30px;
+    }
+}
+
+/* Tablet */
+
+@media screen and (min-width:601px) and (max-width:1250px){
+    .titulo-sobre h1{
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .conteudo-sobre {
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    #carouselExampleFade{
+       
+        
+        width:100%;
+    }
+
+    #accordionExample{
+        width:100%;
+        padding-top:30px;
+    }
+}
