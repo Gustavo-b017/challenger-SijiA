@@ -1,14 +1,12 @@
 import PopUpInfo from './antigo/ComponentesQuiz/PopUp/PopupInfo.jsx';
 import './antigo/Quiz.css'
 import {StartBtn} from './antigo/ComponentesQuiz/LogicaQuiz/LogicaQuiz.jsx'
-import QuizPerguntas from './antigo/ComponentesQuiz/QuizPerguntas/QuizPerguntas.jsx';
 import './style.css';
 
 export default function Quiz() {
   return (
     <main>
       <div className="main">
-        <QuizPerguntas/>
         <section className='home'>
           <div className="home-content">
             <h1>Pagina do Quiz</h1>

@@ -1,5 +1,5 @@
 import QuizNovo from '../../../QuizNovo';
-import './QuizPerguntas.css';
+// import './QuizPerguntas.css';
 
 export default function QuizPerguntas() {
   return (
