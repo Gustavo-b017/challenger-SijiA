@@ -50,11 +50,6 @@
 
 
 /* LogicaMemoria */
-.pJogadas{
-    font-size: 2rem;
-    font-weight: bold;
-    color: #5fe36a;
-}
 
 .divCartasMemoria {
     margin: 2rem 0;
@@ -66,6 +61,20 @@
     @media screen and (max-width: 800px){
         grid-template-columns: repeat(2, 1fr);
     }
+}
+
+.controleJogoMemoria {
+    margin-top: 2vw;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    width: 100%;
+    align-items: center;
+}
+
+.pJogadas{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #5fe36a;
 }
 
 .buttonMemoriaIniciar {
@@ -89,7 +98,7 @@
     background: none;
     border: 2px solid #fff;
     margin: 10px 0;
-    padding: 6px 12px;
+    padding: 8px 12px;
     border-radius: 10px;
     color: #fff;
     font-weight: bold;
@@ -100,6 +109,13 @@
       background-color: #F6CEE7;
       color: #c83989;
     }
+}
+
+.buttonsMemoria{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
 }
 
 .sectionMemoriaHemodialize {
