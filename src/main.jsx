@@ -9,6 +9,7 @@ import QuizNovo from './Paginas/Quiz/QuizNovo.jsx'
 import Home from './Paginas/Home/Home.jsx'
 import EscolherJogo from './Paginas/Memoria/Componentes/EscolherJogo.jsx'
 import MemoriaHemodialize from './Paginas/Memoria/Componentes/MemoriaHemodialize.jsx'
+import Quiz from './Paginas/Quiz/Quiz.jsx'
 
 const router = createBrowserRouter([{
   path: '/',
@@ -25,7 +26,18 @@ const router = createBrowserRouter([{
         }
       ]
     },
-    {path:'Quiz', element: <QuizNovo />},
+    {path:'Quiz', 
+      element: <Quiz />,
+      children: [
+        {index: true, element: <Quiz/>},
+        {
+          path: 'QuizPerguntas',
+          element: <QuizNovo/>,
+        }
+      ]
+    },
+    {path:'QuizPerguntas', element: <QuizNovo />},
+    {path:'Quiz', },
     {path:'*', element: <PageNotFound/>},
   ]
 }])
