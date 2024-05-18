@@ -37,7 +37,7 @@ const router = createBrowserRouter([{
         }
       ]
     },
-    {path:'QuizPerguntas', element: <QuizNovo />},
+    {path:'Contato', element: <Contato/>},
     {path:'Quiz', },
     {path:'*', element: <PageNotFound/>},
   ]

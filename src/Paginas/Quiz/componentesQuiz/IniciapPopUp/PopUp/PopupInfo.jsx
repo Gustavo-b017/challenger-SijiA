@@ -18,7 +18,7 @@ export default function PopUpInfo() {
       <div className="btn-group">
         <button onClick={ExitBtn} className="info-btn">Sair do quiz</button>
         <button onClick={ContinuarBtn} className="info-btn">
-          <Link to="/QuizPerguntas">Iniciar Quiz</Link>
+          <Link to="QuizPerguntas">Iniciar Quiz</Link>
         
         </button>
       </div>

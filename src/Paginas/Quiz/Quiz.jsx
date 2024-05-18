@@ -2,7 +2,7 @@ import PopUpInfo from './componentesQuiz/IniciapPopUp/PopUp/PopupInfo.jsx';
 import './componentesQuiz/IniciapPopUp/QuizPerguntas.css'
 import {StartBtn} from './componentesQuiz/IniciapPopUp/LogicaQuiz.jsx'
 
-import banner_quiz from './img/banner-quiz.gif'
+// import banner_quiz from './img/banner-quiz.gif'
 
 export default function Quiz() {
   return (
@@ -10,12 +10,12 @@ export default function Quiz() {
       <div className="main">
         <section className='home-quiz'>
 
-          {/* BANNER QUIZ */}
+          {/* BANNER QUIZ
           <div className="banner-quiz">
             <div className="titulo-quiz">
               <img src={banner_quiz} alt="Quiz"/>
             </div>
-          </div>
+          </div> */}
 
           {/* LISTA DE QUIZZES */}
           <div className="home-content">
