@@ -35,8 +35,25 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-
     color: #42A6D3;
     font-size: 2rem;
     font-weight: bold;
+}
+
+/* Mobile */
+
+@media (max-width:600px){
+    .nuvem-text {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+}
+
+/* Tablet */
+
+@media screen and (min-width:601px) and (max-width:1250px){
+    .nuvem-text {
+        font-size: 0.8rem;
+        text-align: center;
+    }
 }

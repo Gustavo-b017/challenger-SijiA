@@ -23,7 +23,7 @@ export default function Menu() {
           <div className="navbar-nav ">
 
             <li className="menuItens">
-              <Link to='/' >
+              <Link to='Contato' >
                 <a className='menuLink active'>Contato</a >
               </Link>
             </li>
@@ -52,6 +52,12 @@ export default function Menu() {
                 <li className="menuItens menuItens2">
                   <Link to='Quiz' >
                     <a className='menuLink' >Quiz</a >
+                  </Link>
+                </li>
+
+                <li className="menuItens menuItens2">
+                  <Link to='QuizVelho' >
+                    <a className='menuLink' >Quiz velho</a >
                   </Link>
                 </li>
                 
