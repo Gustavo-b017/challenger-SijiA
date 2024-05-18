@@ -8,7 +8,6 @@ export default function Quiz() {
   return (
     <main>
       <div className="main">
-<<<<<<< HEAD
         <section className='home-quiz'>
 
           {/* BANNER QUIZ */}
@@ -19,9 +18,6 @@ export default function Quiz() {
           </div>
 
           {/* LISTA DE QUIZZES */}
-=======
-        <section className='home'>
->>>>>>> a2149a653552206169ab3eb76340dca1b104ea99
           <div className="home-content">
             <h1>Pagina do Quiz</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci dolore iure non rerum blanditiis nemo corrupti dolor dignissimos ex laboriosam repellendus delectus</p>
