@@ -38,6 +38,7 @@ const router = createBrowserRouter([{
       ]
     },
     {path:'Contato', element: <Contato/>},
+    {path:'QuizNOvo', element: <QuizNovo/>},
     {path:'Quiz', },
     {path:'*', element: <PageNotFound/>},
   ]
