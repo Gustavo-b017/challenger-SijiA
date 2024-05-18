@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.banner-quiz {
+  margin-top: -5%;
+  width: 100%;
+  height: 38vw;
+  background: url(../../img/nuvens-quiz.png) no-repeat;
+  background-size: cover;
+  animation: animate 20s linear infinite;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: none;
+}
+.banner-quiz .gif-quiz {
+  margin-top: 5%;
+  width: 35vw;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+/* ------------------ CADS COM OS TEMAS ------------------ */
+.temas-quiz {
+  margin: 10px auto;
+  width: 60%;
+}
+.temas-quiz .escolher-quiz-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  gap: 2%;
+  margin: 20px auto;
+}
+.temas-quiz .escolher-quiz-div .escolher-quiz-btn {
+  background: #D1F4F6;
+  margin: 10px 0;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 32%;
+  height: 20vw;
+  box-shadow: 0.15rem 0.15rem 0.5em rgba(0, 0, 0, 0.299);
+  min-width: 250px;
+  min-height: 250px;
+}
+.temas-quiz .escolher-quiz-div .escolher-quiz-btn:hover {
+  background-color: #F1E49D;
+  border: 10px solid #FFDE59;
+  border-radius: none;
+}
+.temas-quiz .escolher-quiz-div .escolher-quiz-btn img {
+  width: 50%;
+  height: 50%;
+}
+.temas-quiz .escolher-quiz-div .escolher-quiz-btn p {
+  padding: 10% 0 0 0;
+  font-size: 1.5rem;
+  color: #67A3E2;
+  text-transform: uppercase;
+}/*# sourceMappingURL=homeQuiz.css.map */

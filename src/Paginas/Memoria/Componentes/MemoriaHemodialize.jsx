@@ -1,7 +1,7 @@
 import './css/jogos.css';
 import LogicaMemoria from './LogicaMemoria';
 import bannerHemo from '../Img/banner_memoria/banner-hemograma.png'
-import icon_hemograma from '../Img/icons/hemoglobina.svg'
+import icon_hemograma from '../../Public/icons/hemoglobina.svg'
 
 
 function MemoriaHemodialize() {

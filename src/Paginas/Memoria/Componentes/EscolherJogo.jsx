@@ -4,9 +4,9 @@ import './css/escolher-jogo.css';
 import banner_memoria from '../Img/banner_memoria/banner-memoria.svg'
 import icon_memoria from '../Img/banner_memoria/icons-jg-memoria.gif'
 
-import hemoglobina from '../Img/icons/hemoglobina.svg'
-import coracao from '../Img/icons/coracao.svg'
-import raioX from '../Img/icons/raioX.svg'
+import hemoglobina from '../../Public/icons/hemoglobina.svg'
+import coracao from '../../Public/icons/coracao.svg'
+import raioX from '../../Public/icons/raioX.svg'
 
 function EscolherJogo() {
   return (

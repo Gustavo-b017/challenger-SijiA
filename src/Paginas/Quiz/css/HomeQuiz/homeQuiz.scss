@@ -1,0 +1,86 @@
+@use 'mixinsQuiz';
+@use 'variaveis';
+
+body {
+    @include mixinsQuiz.zero-config(0, 0);
+}
+
+// ------------------ BANNER QUIZ ------------------ 
+
+.banner-quiz {
+    margin-top: -5%;
+    width: 100%;
+    height: 38vw;
+    background: url(../../img/nuvens-quiz.png) no-repeat;
+    background-size: cover;
+
+    animation: animate 20s linear infinite;
+
+    @include mixinsQuiz.flex-config(row, center, center);
+
+    .gif-quiz {
+        margin-top: 5%;
+        width: 35vw;
+    }
+    
+}
+
+@keyframes animate {
+    0% {background-position: 0;}
+    100% {background-position: 100%;}
+}
+
+
+/* ------------------ CADS COM OS TEMAS ------------------ */
+
+.temas-quiz{
+    margin: 10px auto ; 
+    width: 60%;
+
+    // TEMAS DOS QUIZ
+    .escolher-quiz-div {
+        @include mixinsQuiz.flex-config(row, center, center, wrap);
+        @include mixinsQuiz.div-size(100%, auto);
+        gap: 2%;
+        margin: 20px auto;
+
+        // BOTÃO TEMA QUIZ
+        .escolher-quiz-btn {
+            background: variaveis.$azul_claro;
+            
+            margin: 10px 0;
+            padding: 6px 10px;
+
+            border: none;
+            border-radius: 10px;
+
+            cursor: pointer;
+
+            @include mixinsQuiz.fonte-config(1rem, bold);
+            @include mixinsQuiz.div-size(32%, 20vw);
+            @include mixinsQuiz.sombra(0.15rem, 0.15rem, 0.5em, variaveis.$sombra); 
+            
+            min-width: 250px;
+            min-height: 250px;
+        
+            &:hover{
+                background-color: variaveis.$amarela_claro;
+                @include mixinsQuiz.borda(10px, solid, variaveis.$amarela_escuro);
+            }
+
+            // IMAGEM QUIZ
+            img {
+                @include mixinsQuiz.div-size(50%, 50%);
+            }
+            
+            // TÍTULO QUIZ
+            p {
+                padding: 10% 0 0 0;
+                font-size: 1.5rem;
+                color: variaveis.$azul_intermediario;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
