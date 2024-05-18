@@ -54,6 +54,12 @@ export default function Menu() {
                     <a className='menuLink' >Quiz</a >
                   </Link>
                 </li>
+
+                <li className="menuItens menuItens2">
+                  <Link to='QuizVelho' >
+                    <a className='menuLink' >Quiz velho</a >
+                  </Link>
+                </li>
                 
               </ul>
             </li>
