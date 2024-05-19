@@ -1,12 +1,6 @@
-import PopUpInfo from './componentesQuiz/IniciapPopUp/PopUp/PopupInfo.jsx';
-import {StartBtn} from './componentesQuiz/IniciapPopUp/LogicaQuiz.jsx'
 import './componentesQuiz/IniciapPopUp/QuizPerguntas.css'
 import './css/HomeQuiz/homeQuiz.css'
-
-import banner_quiz from './img/banner-quiz.gif'
-import icon_hemograma from '../Public/icons/hemoglobina.svg'
-import icon_coracao from '../Public/icons/coracao.svg'
-import icon_raioX from '../Public/icons/raioX.svg'
+import { Outlet } from 'react-router-dom';
 
 export default function Quiz() {
   return (
@@ -46,6 +40,9 @@ export default function Quiz() {
       </div>
       
       <PopUpInfo/>
+
+      <Outlet/>
+      
     </main>
   );
 }

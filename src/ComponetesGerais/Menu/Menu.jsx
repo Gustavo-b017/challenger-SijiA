@@ -34,6 +34,12 @@ export default function Menu() {
               </Link>
             </li>
 
+            <li className="menuItens">
+              <Link to='Videos' >
+                <a className='menuLink' >Videos</a >
+              </Link>
+            </li>
+
 
             <li className="dropdown menuItens">
               
@@ -52,12 +58,6 @@ export default function Menu() {
                 <li className="menuItens menuItens2">
                   <Link to='Quiz' >
                     <a className='menuLink' >Quiz</a >
-                  </Link>
-                </li>
-
-                <li className="menuItens menuItens2">
-                  <Link to='QuizNOvo' >
-                    <a className='menuLink' >Quiz velho</a >
                   </Link>
                 </li>
                 

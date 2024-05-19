@@ -5,12 +5,14 @@ import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import './geral.css'
 import Memoria from './Paginas/Memoria/Memoria.jsx'
 import PageNotFound from './Paginas/PageNotFound/PageNotFound.jsx'
-import QuizNovo from './Paginas/Quiz/QuizNovo.jsx'
 import Home from './Paginas/Home/Home.jsx'
 import EscolherJogo from './Paginas/Memoria/Componentes/EscolherJogo.jsx'
 import MemoriaHemodialize from './Paginas/Memoria/Componentes/MemoriaHemodialize.jsx'
 import Contato from './Paginas/Contato/Contato.jsx'
 import Quiz from './Paginas/Quiz/Quiz.jsx'
+import QuizInicial from './Paginas/Quiz/componentesQuiz/QuizInicial.jsx'
+import QuizPerguntas from './Paginas/Quiz/componentesQuiz/QuizPerguntas.jsx'
+import Videos from './Paginas/Videos/Videos.jsx'
 
 const router = createBrowserRouter([{
   path: '/',
@@ -30,16 +32,15 @@ const router = createBrowserRouter([{
     {path:'Quiz', 
       element: <Quiz />,
       children: [
-        {index: true, element: <Quiz/>},
+        {index: true, element: <QuizInicial/>},
         {
           path: 'QuizPerguntas',
-          element: <Home/>,
+          element: <QuizPerguntas/>,
         }
       ]
     },
     {path:'Contato', element: <Contato/>},
-    {path:'QuizNOvo', element: <QuizNovo/>},
-    {path:'Quiz', },
+    {path:'Videos', element: <Videos/>},
     {path:'*', element: <PageNotFound/>},
   ]
 }])
