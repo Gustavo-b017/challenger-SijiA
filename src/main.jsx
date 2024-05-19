@@ -14,7 +14,7 @@ import MemoriaHemodialize from './Paginas/Memoria/Componentes/MemoriaHemodialize
 
 import Quiz from './Paginas/Quiz/Quiz.jsx'
 import QuizInicial from './Paginas/Quiz/componentesQuiz/QuizInicial.jsx'
-import QuizPerguntas from './Paginas/Quiz/componentesQuiz/QuizApp/QuizPerguntas.jsx'
+import QuizPerguntas from './Paginas/Quiz/componentesQuiz/QuizPerguntas.jsx'
 
 import Videos from './Paginas/Videos/Videos.jsx'
 
