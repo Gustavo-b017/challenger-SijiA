@@ -88,22 +88,22 @@ class QuizApp extends Component {
 
     switch (tries) {
       case 0: {
-        praise = '1st Try!';
+        praise = 'Excelente! 😍';
         points = '+10';
         break;
       }
       case 1: {
-        praise = '2nd Try!';
+        praise = 'Parabéns 😊';
         points = '+5';
         break;
       }
       case 2: {
-        praise = 'Correct!';
+        praise = 'Muito bem 🥰';
         points = '+2';
         break;
       }
       default: {
-        praise = 'Correct!';
+        praise = 'Isso aí 👌 ';
         points = '+1';
       }
     }

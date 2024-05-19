@@ -23,11 +23,11 @@
 }
 .popupInfo .info {
   display: inline-block;
+  margin: 0.4rem 0;
   font-size: 1.1rem;
   font-weight: 700;
   text-transform: none;
   color: #67A3E2;
-  margin: 0.4rem 0;
 }
 .popupInfo .info img {
   width: 25px;

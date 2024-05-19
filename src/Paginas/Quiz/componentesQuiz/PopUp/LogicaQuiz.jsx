@@ -1,5 +1,5 @@
 import '../../Quiz.jsx'
-import './PopUp/PopupInfo.jsx'
+import './PopupInfo.jsx'
 
 // mostra o card de informcao
 export function StartBtn  ()   {

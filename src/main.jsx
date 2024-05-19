@@ -3,15 +3,19 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import './geral.css'
-import Memoria from './Paginas/Memoria/Memoria.jsx'
-import PageNotFound from './Paginas/PageNotFound/PageNotFound.jsx'
+
 import Home from './Paginas/Home/Home.jsx'
+import Contato from './Paginas/Contato/Contato.jsx'
+import PageNotFound from './Paginas/PageNotFound/PageNotFound.jsx'
+
+import Memoria from './Paginas/Memoria/Memoria.jsx'
 import EscolherJogo from './Paginas/Memoria/Componentes/EscolherJogo.jsx'
 import MemoriaHemodialize from './Paginas/Memoria/Componentes/MemoriaHemodialize.jsx'
-import Contato from './Paginas/Contato/Contato.jsx'
+
 import Quiz from './Paginas/Quiz/Quiz.jsx'
 import QuizInicial from './Paginas/Quiz/componentesQuiz/QuizInicial.jsx'
 import QuizPerguntas from './Paginas/Quiz/componentesQuiz/QuizPerguntas.jsx'
+
 import Videos from './Paginas/Videos/Videos.jsx'
 
 const router = createBrowserRouter([{

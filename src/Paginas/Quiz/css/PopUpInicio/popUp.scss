@@ -27,10 +27,10 @@
     // INFO
     .info {
         display: inline-block;
-    
+        margin: 0.4rem 0;
+
         @include mixinsQuiz.fonte-config(1.1rem, 700);
         color:  variaveis.$azul_intermediario;
-        margin: 0.4rem 0;
 
         // MOEDAS
         img {
