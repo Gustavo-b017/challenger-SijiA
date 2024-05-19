@@ -1,6 +1,6 @@
 .container-nuvens {
 
-    margin-top: -85px;
+    margin-top: -90px;
     background-color: #42A6D3;
     display: grid;
     grid-template-rows: auto;
@@ -50,8 +50,6 @@
         width:100px;
         
     }
-
-   
 }
 
 /* Tablet */

@@ -1,5 +1,5 @@
 import React from 'react';
-import QuizApp from './QuizApp';
+import QuizApp from './QuizApp/QuizApp';
 
 export default function QuizPerguntas() { 
   

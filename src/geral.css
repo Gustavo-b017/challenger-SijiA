@@ -10,6 +10,24 @@
   /* border: 1px solid red; */
 }
 
+body {
+
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  background: linear-gradient(#fff 15% , #42A6D3 35%) no-repeat;
+  font-family: 'Roboto', sans-serif;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  color: #fff; 
+  
+}
+
 @media (max-width:600px){
   
 }
+
+

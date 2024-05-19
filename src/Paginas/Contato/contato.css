@@ -1,0 +1,42 @@
+#contato {
+    position: relative;
+    background: linear-gradient(#fff 1% , #A4A9DF 60%);
+    width: 50vw;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    color: #6727BD;
+}
+
+.formularioContato {
+    width: 50%;
+
+    h1 {
+        font-weight: bold;
+        font-size: 5rem;
+    }
+}
+
+.inputContato {
+
+    input{
+        border-radius: 50px;
+        height: 110px;
+    }
+
+    img {
+        width: 40px;
+    }
+
+    textarea {
+        border-radius: 50px;
+    }
+}
+
+
+.imgContato {
+    width: 50%;
+}
