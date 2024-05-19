@@ -55,6 +55,7 @@ body {
   cursor: pointer;
   font-size: 1rem;
   font-weight: bold;
+  text-transform: none;
   width: 32%;
   height: 20vw;
   box-shadow: 0.15rem 0.15rem 0.5em rgba(0, 0, 0, 0.299);

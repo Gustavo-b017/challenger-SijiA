@@ -1,0 +1,106 @@
+@use '../mixinsQuiz';
+@use '../variaveis';
+
+.popupInfo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 0.8rem 1.2rem;
+
+    background-color: variaveis.$azul_claro;
+    @include mixinsQuiz.div-size(50rem, auto);
+    @include mixinsQuiz.borda(0.7rem, solid, variaveis.$azul_claro_subtom, 0.6rem);
+
+    transform: translate(-50%, -50%) scale(.9);
+    pointer-events: none;
+    transition: .3s ease;
+    opacity: 0;
+
+    // TÍTULO
+    h2 {
+        @include mixinsQuiz.fonte-config(2.5rem, 700);
+        color: variaveis.$azul_intermediario;
+        text-align: center;
+        margin: 1rem auto;
+    }
+
+    // INFO
+    .info {
+        display: inline-block;
+    
+        @include mixinsQuiz.fonte-config(1.1rem, 700);
+        color:  variaveis.$azul_intermediario;
+        margin: 0.4rem 0;
+
+        // MOEDAS
+        img {
+            @include mixinsQuiz.div-size(25px, auto);
+        }
+    }
+
+    // LINHA
+    hr {
+        color: variaveis.$azul_intermediario;
+        margin: 1rem 0;
+    }
+
+    // BOTÕES
+    .btn-group {
+        @include mixinsQuiz.flex-config(row, space-between, center, wrap);
+        margin: 1rem auto;
+        width: 60%;
+
+        .info-btn {
+            // display: inline-flex;
+            @include mixinsQuiz.fonte-config(1rem, bold, uppercase);
+            @include mixinsQuiz.flex-config(row, center, center);
+            @include mixinsQuiz.div-size(9rem, 2.8rem);
+            letter-spacing: 1px;
+            outline: none;
+            transition: .5s;
+            cursor: pointer;
+
+            // BOTÃO SAIR
+            &:nth-child(1) {
+                background-color: transparent;
+                color: variaveis.$rosa_intermediario;
+                
+                @include mixinsQuiz.borda(0.2rem, solid, variaveis.$rosa_intermediario, 0.4rem);
+                @include mixinsQuiz.sombra(0, 0, 4px, variaveis.$rosa_intermediario);
+              
+                &:hover {
+                  background-color: variaveis.$rosa_intermediario;
+                  color: #fff;
+                }
+            }
+
+            // BOTÃO CONTINUAR  
+            &:nth-child(2) {
+                background-color: transparent;
+                
+                @include mixinsQuiz.borda(0.2rem, solid, variaveis.$verde_escuro, 0.4rem);
+                @include mixinsQuiz.sombra(0, 0, 4px, variaveis.$verde_escuro);
+            
+                .iniciaQuiz {
+                    color: variaveis.$verde_escuro;
+                }
+              
+                &:hover {
+                    background-color: variaveis.$verde_escuro;
+                    .iniciaQuiz {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.popupInfo.active {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    pointer-events: auto;
+    .popupInfo {
+        filter: blur(5px);
+    }
+}

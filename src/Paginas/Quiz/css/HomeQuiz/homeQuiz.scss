@@ -1,5 +1,5 @@
-@use 'mixinsQuiz';
-@use 'variaveis';
+@use '../mixinsQuiz';
+@use '../variaveis';
 
 body {
     @include mixinsQuiz.zero-config(0, 0);

@@ -25,7 +25,9 @@
     border-radius: $radius;
 }
 
-@mixin fonte-config($tam, $esp){
+@mixin fonte-config($tam, $esp, $trans:none){
+
     font-size: $tam;
     font-weight: $esp;
+    text-transform: $trans;
 }
