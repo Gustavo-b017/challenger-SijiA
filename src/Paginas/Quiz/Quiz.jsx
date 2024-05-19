@@ -11,7 +11,7 @@ import icon_raioX from '../Public/icons/raioX.svg'
 export default function Quiz() {
   return (
     <main>
-      <div className="main">
+      <div className="mainQuiz">
         <section className='home-quiz'>
 
           {/* BANNER QUIZ  */}
