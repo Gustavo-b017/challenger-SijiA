@@ -11,7 +11,7 @@ export default function Caracteristicas() {
     <div className="container-nuvens">
         
         <div className="nuvem">
-            <img src={nuvem1} class="img-fluid nuvens-img" alt="nuvem"></img>
+            <img src={nuvem1} class="img-fluid nuvens-img" id="img-fluid-nuvem" alt="nuvem"></img>
             <div className="content">
                 <img src={i_video} class="img-fluid" alt="videos"></img>
                 <span className="nuvem-text">

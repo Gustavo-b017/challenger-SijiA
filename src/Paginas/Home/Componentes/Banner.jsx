@@ -1,4 +1,5 @@
 import FotoBanner from '../Img/banner.png';
+import "./css/Banner.css"
 
 export default function Banner() {
   return (
