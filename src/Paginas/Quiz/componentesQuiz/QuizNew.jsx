@@ -29,7 +29,6 @@ function QuizNew ({ step, questions, totalQuestions, score, handleAnswerClick, h
           // A função para lidar com a tecla Enter é passada como prop
           handleEnterPress={handleEnterPress} 
         />
-        
       </div>
     </div>
   );

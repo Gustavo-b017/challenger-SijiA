@@ -68,8 +68,14 @@
 
 /* QUESTÕES DO QUIZ*/
 .questions {
-  width: 85%;
+  width: 60%;
   margin: 35px auto 0;
+  padding: 2%;
+  background: url("../../img/bg-quiz.png") no-repeat;
+  background-size: cover;
+  color: #67A3E2;
+  border: 10px solid #fff;
+  border-radius: 10px;
 }
 
 .question {
@@ -152,12 +158,14 @@
 }
 
 .wrong {
-  background: rgba(212, 14, 14, 0.726);
+  background: rgba(255, 201, 201, 0.5725490196);
+  border-radius: 10px;
   animation: shake 0.5s cubic-bezier(0.35, 0.05, 0.2, 0.99) both;
 }
 
 .right {
-  background: rgba(83, 226, 61, 0.5);
+  background: rgba(221, 255, 177, 0.568627451);
+  border-radius: 10px;
 }
 
 @keyframes shake {
