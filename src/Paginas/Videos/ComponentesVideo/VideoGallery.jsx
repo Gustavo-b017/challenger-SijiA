@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useRef} from 'react';
 
 import adao from '../videos&img/adao.jpg'
 import adaoVideo from '../videos&img/adaoVideo.mp4'
@@ -58,13 +58,26 @@ function VideoGallery() {
             video: singAloneVideo
         }
     ]
+
+    let divRef = useRef(null)
+    const openModel = () => {
+        divRef.current.classList.remove('video')
+        divRef.current.classList.add('model')
+        setModel(true)
+    }
+
+    const closeModel = () => {
+
+    }
+    
     return ( 
-        <div className="video-gallery">
+        <div ref={divRef} className="video-gallery">
             <h1 style={{textAlign: 'center'}}> video gallery</h1>
             <div className='gallery'>
+                let divRef = useRef(null)
                 {dados.map((item, index) => (
                     <div className="video" key={index}>
-                        <div className="videoContainer">
+                        <div className="videoContainer" onClick={() => openModel()} >
                             <Video
                                 style={{width: '100%'}}
                                 autoPlay={model}
