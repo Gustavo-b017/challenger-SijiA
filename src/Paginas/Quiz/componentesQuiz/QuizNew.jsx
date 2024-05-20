@@ -10,17 +10,13 @@ function QuizNew ({ step, questions, totalQuestions, score, handleAnswerClick, h
     <div className="wrapper">
       <header className='cabecalho-quiz'>
         <div className="question-count">
-          <h2 className='subtitulo-quiz'>Question</h2>
-          {/* O número da questão atual é renderizado aqui */}
-          <div className="question-number">{step}</div> 
-          {/* O número total de questões é renderizado aqui */}
-          <div className="description">of <span>{totalQuestions}</span></div> 
+          <h2>Questão</h2>
+          {/* O número da questão atual e total é renderizado aqui */}
+          <div className="question-number">{step} <span className="description">de {totalQuestions}</span></div> 
         </div>
         <div className="score-container">
-          <h2 className='subtitulo-quiz'>Score</h2>
           {/* A pontuação atual é renderizada aqui */}
-          <div className="score">{score}</div> 
-          <div className="description">points</div>
+          <div className="score">{score} <span className="description">pontos</span></div> 
         </div>
       </header>
 

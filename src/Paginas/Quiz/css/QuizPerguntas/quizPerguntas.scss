@@ -1,4 +1,5 @@
-
+@use '../mixinsQuiz';
+@use '../variaveis';
 
 .quiz-box{
     position: relative;
@@ -22,38 +23,53 @@
     transition-delay: 1s;
   }
   
-  /* segundo */
-  
-  .subtitulo-quiz{
-    font-size: 1rem;
-  } 
-  
+  /* PAINEL DE QUESTÕES E NOTA */
+
   .cabecalho-quiz {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 20px;
-  }
+
+    @include mixinsQuiz.flex-config(column, space-between, center);
+      
+    h2 {
+      @include mixinsQuiz.fonte-config(2em, 400);
+      margin-bottom: 0;
+    }
+
+        
+    .question-count {
+      background: url(../../img/nuvem-questoes.png);
+      background-size: cover;
+      width: 12%;
+      padding: 10px;
+      text-align: center;
+      color: #c40094;
+
+      .question-number {
+        @include mixinsQuiz.fonte-config(3em, 100);
+      }
   
-  .score-container, .question-count {
-    width: 200px;
-    text-align: center;
+    }
+      
+    .score-container {
+      background-size: cover;
+      width: 12%;
+      padding: 10px;
+      text-align: center;
+      color: yellow;
+
+      .score {
+        @include mixinsQuiz.fonte-config(3em, bold);
+      }
+
+    }
+
+    .description {
+      @include mixinsQuiz.fonte-config(0.5em, 100);
+    }
+
   }
-  
-  .score-container h2, .question-count h2 {
-    margin-bottom: 0;
-    font-size: 2em;
-    font-weight: 400;
-  }
-  
-  .score, .question-number {
-    font-size: 4em;
-    font-weight: 100;
-  }
-  
-  .description {
-    font-size: 1.5em;
-  }
+
+
+  /* QUESTÕES DO QUIZ*/
   
   .questions {
     width: 85%;

@@ -22,7 +22,6 @@
     max-width: 35%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 
     h1 {
         margin-bottom: 20%;
@@ -72,5 +71,6 @@
   
     &:hover{
       background-color:  #482465;
+      box-shadow: 0.05rem 0.05rem 0.5em rgba(0, 0, 0, 0.299) ;
     }
 }
