@@ -1,3 +1,5 @@
+import { BtnVideo } from "./ComponentesVideo/BtnVideo";
+
 function Videos() {
     return ( 
         <div>
