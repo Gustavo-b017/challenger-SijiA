@@ -9,7 +9,7 @@ function MemoriaHemodialize() {
     <main className='mainMemoria'>
       <div className="banner-jogo">
         <div className="titulo-jogo">
-          <img src={bannerHemo} className='img-fluid' alt="Hemograma"/>
+          <img src={bannerHemo} className='img-fluid'  alt="Hemograma"/>
         </div>
         <div className="icon-jogo">
           <img src={icon_hemograma} className='img-fluid' alt="icon hemograma" />
