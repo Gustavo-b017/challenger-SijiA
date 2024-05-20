@@ -9,9 +9,7 @@ export default function Menu() {
     <nav className="navbar navbar-expand-lg ">
       <div className="container justify-content-space-between">
         <Link to='/' >
-          <a className='menuLink' >
-            <img className='imgMenu' src={logo} alt="" />
-          </a >
+          <img className='imgMenu' src={logo} alt="" />
         </Link>
 
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,50 +18,50 @@ export default function Menu() {
         
         <div className="collapse navbar-collapse test" id="navbarNavDropdown">
           
-          <div className="navbar-nav ">
+          <ul className="navbar-nav ">
 
             <li className="menuItens">
-              <Link to='Contato' >
-                <a className='menuLink active'>Contato</a >
+              <Link to='Contato' className='menuLink active'>
+                Contato
               </Link>
             </li>
 
             <li className="menuItens">
-              <Link to='/' >
-                <a className='menuLink' >Sobre</a >
+              <Link to='/' className='menuLink'>
+                Sobre
               </Link>
             </li>
 
             <li className="menuItens">
-              <Link to='Videos' >
-                <a className='menuLink' >Videos</a >
+              <Link to='Videos' className='menuLink'>
+                Videos
               </Link>
             </li>
 
-
-            <li className="dropdown menuItens">
-              
+            <ul className="dropdown menuItens">
               <li className="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <a className='menuLink' >Jogos</a >
+                <Link to='#' className='menuLink'>
+                  Jogos
+                </Link>
               </li>
 
               <ul className="dropdown-menu">
-            
                 <li className="menuItens menuItens2">
-                  <Link to='Memoria' >
-                    <a className='menuLink active'>Jogo da Memoria</a >
+                  <Link to='Memoria' className='menuLink active'>
+                    Jogo da Memoria
                   </Link>
                 </li>
 
                 <li className="menuItens menuItens2">
-                  <Link to='Quiz' >
-                    <a className='menuLink' >Quiz</a >
+                  <Link to='Quiz' className='menuLink'>
+                    Quiz
                   </Link>
                 </li>
                 
               </ul>
-            </li>
-          </div>
+            </ul>
+
+          </ul>
         </div>
       </div>
     </nav>
