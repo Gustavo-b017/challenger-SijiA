@@ -72,8 +72,13 @@
   /* QUESTÕES DO QUIZ*/
   
   .questions {
-    width: 85%;
+    width: 60%;
     margin: 35px auto 0;
+    padding: 2%;
+    background: url('../../img/bg-quiz.png') no-repeat;
+    background-size: cover;
+    color: variaveis.$azul_intermediario;
+    @include mixinsQuiz.borda(10px, solid, #fff, 10px);
   }
   
   .question {
@@ -154,14 +159,15 @@
   
   }
   
-  
   .wrong {
-    background: rgba(212, 14, 14, 0.726);
+    background: variaveis.$vermelho_erro;
+    border-radius: 10px;
     animation: shake 0.5s cubic-bezier(.35,.05,.20,.99) both;
   }
   
   .right {
-    background: rgba(83, 226, 61, 0.5);
+    background: variaveis.$verde_certo;
+    border-radius: 10px;
   }
   
   @keyframes shake {
@@ -179,6 +185,10 @@
     }
   }
   
+
+
+
+
   /* mensagem dos pontos ganhos */
   .correct-modal {
   
