@@ -1,13 +1,15 @@
-import PopUpInfo from './IniciapPopUp/PopUp/PopupInfo.jsx';
-import {StartBtn} from './IniciapPopUp/LogicaQuiz.jsx'
+import PopUpInfo from './PopUp/PopupInfo.jsx';
+import {StartBtn} from './PopUp/LogicaQuiz.jsx'
+
 import banner_quiz from '../img/banner-quiz.gif'
 import icon_hemograma from '../../Public/icons/hemoglobina.svg'
 import icon_coracao from '../../Public/icons/coracao.svg'
 import icon_raioX from '../../Public/icons/raioX.svg'
+
 function QuizInicial() {
 return (
-    <main>
-        <div className="main">
+    <main id='quiz'>
+        <div className="mainQuiz">
             <section className='home-quiz'>
         
                 {/* BANNER QUIZ  */}
@@ -16,7 +18,6 @@ return (
                 </div>
         
                 {/* LISTA DE QUIZZES */}
-                
                 <div className="temas-quiz">
                     <h1>Escolha o tema que deseja jogar:</h1>
                     <div className="escolher-quiz-div ">

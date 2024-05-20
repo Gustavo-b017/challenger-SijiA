@@ -1,6 +1,5 @@
 import React from 'react';
-import QuizApp from './QuizApp';
-// import './css/style.css';
+import QuizApp from './QuizApp/QuizApp';
 
 export default function QuizPerguntas() { 
   

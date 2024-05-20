@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import QuestionList from './QuestionList';
+import QuestionList from './Questoes/QuestionList';
+import '../css/QuizPerguntas/quizPerguntas.css'
 
 // O componente QuizNew recebe cinco props: step, questions, totalQuestions, score, handleAnswerClick e handleEnterPress
 function QuizNew ({ step, questions, totalQuestions, score, handleAnswerClick, handleEnterPress }){
