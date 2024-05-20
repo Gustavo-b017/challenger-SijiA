@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .quiz-box {
   position: relative;
   width: 600px;
@@ -20,38 +21,52 @@
   transition-delay: 1s;
 }
 
-/* segundo */
-.subtitulo-quiz {
-  font-size: 1rem;
-}
-
+/* PAINEL DE QUESTÕES E NOTA */
 .cabecalho-quiz {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding-top: 20px;
+  flex-wrap: none;
 }
-
-.score-container, .question-count {
-  width: 200px;
-  text-align: center;
-}
-
-.score-container h2, .question-count h2 {
-  margin-bottom: 0;
+.cabecalho-quiz h2 {
   font-size: 2em;
   font-weight: 400;
+  text-transform: none;
+  margin-bottom: 0;
 }
-
-.score, .question-number {
-  font-size: 4em;
+.cabecalho-quiz .question-count {
+  background: url(../../img/nuvem-questoes.png);
+  background-size: cover;
+  width: 12%;
+  padding: 10px;
+  text-align: center;
+  color: #c40094;
+}
+.cabecalho-quiz .question-count .question-number {
+  font-size: 3em;
   font-weight: 100;
+  text-transform: none;
+}
+.cabecalho-quiz .score-container {
+  background-size: cover;
+  width: 12%;
+  padding: 10px;
+  text-align: center;
+  color: yellow;
+}
+.cabecalho-quiz .score-container .score {
+  font-size: 3em;
+  font-weight: bold;
+  text-transform: none;
+}
+.cabecalho-quiz .description {
+  font-size: 0.5em;
+  font-weight: 100;
+  text-transform: none;
 }
 
-.description {
-  font-size: 1.5em;
-}
-
+/* QUESTÕES DO QUIZ*/
 .questions {
   width: 85%;
   margin: 35px auto 0;
