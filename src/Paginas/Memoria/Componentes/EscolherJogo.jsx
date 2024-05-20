@@ -14,10 +14,10 @@ function EscolherJogo() {
     <div className="memoria-inicio">
       <div className="banner-memoria">
         <div className="titulo-memoria">
-          <img src={banner_memoria} alt="Título jogo da memória"/>
+          <img src={banner_memoria} id="img-titulo" alt="Título jogo da memória"/>
         </div>
         <div className="jogo-memoria">
-          <img src={icon_memoria} alt="jogo da memória - gif" />
+          <img src={icon_memoria} id="img-giff" alt="jogo da memória - gif" />
         </div>
       </div>
 

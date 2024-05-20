@@ -1,5 +1,6 @@
 import ContraCapa from '../Img/contra-capa.svg'
 import './css/memoria.css';
+import './css/jogos.css'
 
 export default function SoloCard({card, handleChoice, flipped, disabled}){
   
