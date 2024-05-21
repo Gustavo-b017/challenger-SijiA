@@ -1,6 +1,9 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
 import tally from '../../helpers/tally';
+import parabens from '../../img/presente.gif';
+
 
 const Results = ({ userAnswers, score, restartQuiz }) => {
   const triesTotal = tally(userAnswers);
@@ -11,14 +14,19 @@ const Results = ({ userAnswers, score, restartQuiz }) => {
   
   return (
     <div className="results-container">
-      <h2 className='h2-subtitulo'>Resultados do Quiz</h2>
-      <div>Você acertou..</div>
-      {oneTry}
-      {twoTries}
-      {threeTries}
-      {fourTries}
-      <div className="results-total">Seu total de pontos é : <strong>{score}</strong></div>
-      <a onClick={restartQuiz} id='reiniciarQuiz'>Reiniciar Quiz</a>
+      <h2>Parabéns <img src={parabens} alt="Presente"/></h2>
+      <div className='results'>
+        <span>Você acertou...</span>
+        {oneTry}
+        {twoTries}
+        {threeTries}
+        {fourTries}
+        <span className="results-total">Total: <strong>{score} pontos</strong></span>
+      </div>
+      <div className="btn-group">
+        <button onClick={restartQuiz} className='info-btn'>Reiniciar</button>
+        <button className='info-btn'><Link to="/Quiz" className='formLink'>Sair</Link></button>
+      </div>
     </div>
   );
 }
