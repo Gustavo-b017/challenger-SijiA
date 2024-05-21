@@ -8,70 +8,80 @@
   border: none !important;
 }
 
+.navbar .container{
+  padding: 0 50px;
+}
+
 .menuItens {
   position: relative;
   font-weight: bold;
   transition: 0.5s;
+  padding: 5px 1px;
   background: #67A3E2;
-  padding: 10px 6px;
   z-index: 1;
-  
-  &:hover {
-    background-color: #0EC0DF;
-    transform: translateY(15px);
-    transition: 0.5s;
-  }
-
-  &:before {
-    content: '';
-    position: absolute;
-    left: 100%;
-    width: 10px;
-    height: 100%;
-    background: #5a8fc7;
-    transform: skewY(60deg);
-    transform-origin: right;
-    transition: 0.5s;
-    bottom: -16px;
-  }
-
-  &:hover::before {
-    background: #1cbcd8;
-    transition: 0.5s;
-  }
-
-  &:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    background: #4f85be;
-    transform-origin: bottom;
-    transform: 0.5s;
-    bottom: -15px;
-    left: 8px;
-    height: 15px;
-    transform: skewX(27deg);
-  }
-  
-  &:hover:after {
-    background: #1aafc9;
-    transition: 0.5s;
-  }
 }
 
-.menuItens2 {
-  &:hover {
-    transform: translatex(15px);
-  }
+.menuItens:hover {
+  background-color: #0EC0DF;
+  transform: translateY(15px);
+  transition: 0.5s;
 }
 
-Link {
-  color: #fff;
-  text-decoration: none;
+.menuItens::before {
+  content: '';
+  position: absolute;
+  left: 100%;
+  width: 10px;
+  height: 100%;
+  background: #5a8fc7;
+  transform: skewY(64deg);
+  transform-origin: right;
+  transition: 0.5s;
+  bottom: -18px;
+}
+
+.menuItens:hover::before {
+  background: #1cbcd8;
+  transition: 0.5s;
+}
+
+.menuItens::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  background: #4f85be;
+  transform-origin: bottom;
+  transform: 0.5s;
+  bottom: -15px;
+  left: 8px;
+  height: 15px;
+  transform: skewX(27deg);
+}
+
+.menuItens:hover:after {
+  background: #1aafc9;
+  transition: 0.5s;
+}
+
+.menuItens2 a {
+  padding: 5px 25%;
+}
+
+.menuJogos span{
+  padding: 10px 15%;
+  border: 1px solid gold;
+}
+.menuItens2 .menuJogosQuiz {
+  padding: 5px 35%;
+}
+
+.menuItens2:hover {
+  transform: translatex(15px);
 }
 
 .menuLink {  
-  padding: 5px;
+  padding: 10px 14px;
+  position: sticky;
   text-transform: uppercase;
   font-size: 18px;
   color: #fff;
@@ -85,4 +95,14 @@ a {
 .imgMenu {
   width: 100px;
   height: 100px;
+}
+
+@media screen and (max-width: 990px) {
+  .menuLink {  
+    padding: 10px 40%;
+  }
+
+  .menuItens:hover {
+    transform: translateX(15px);
+  }
 }

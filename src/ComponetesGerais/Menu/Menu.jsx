@@ -7,6 +7,7 @@ export default function Menu() {
   <div>
     {/* bg-body-tertiary */}
     <nav className="navbar navbar-expand-lg ">
+
       <div className="container justify-content-space-between">
         <Link to='/' >
           <img className='imgMenu' src={logo} alt="" />
@@ -40,20 +41,20 @@ export default function Menu() {
 
             <ul className="dropdown menuItens">
               <li className="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <Link to='#' className='menuLink'>
-                  Jogos
+                <Link to='#' className='menuLink menuJogos'>
+                  <span> Jogos</span>
                 </Link>
               </li>
 
               <ul className="dropdown-menu">
                 <li className="menuItens menuItens2">
-                  <Link to='Memoria' className='menuLink active'>
-                    Jogo da Memoria
+                  <Link to='Memoria' className='menuLink ' >
+                    Memoria
                   </Link>
                 </li>
 
                 <li className="menuItens menuItens2">
-                  <Link to='Quiz' className='menuLink'>
+                  <Link to='Quiz' className='menuLink menuJogosQuiz'>
                     Quiz
                   </Link>
                 </li>
