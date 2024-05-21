@@ -25,7 +25,7 @@ function VideoGallery() {
 
                 {
                     file?.type === "video" 
-                    ? <video src={file?.url} autoPlay controls />     
+                    ? <video src={file?.url} autoPlay loop controls />     
                     : <img src={file?.url} />
                 }
 
