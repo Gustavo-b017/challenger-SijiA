@@ -13,8 +13,8 @@ function VideoGallery() {
                     <div  className="media" key={index} onClick={() => setFile(file)}>
                         {
                             file.type === "image"
-                            ? <img  src={file.url} alt=""/>
-                            : <video src={`${file.url}#t=0.001`} muted preload="metadata" />
+                            ? <video src={`${file.url}#t=0.001`} muted preload="metadata" />
+                            : <img  src={file.poster} alt=""/>
                         }  
                     </div>
                 ))}

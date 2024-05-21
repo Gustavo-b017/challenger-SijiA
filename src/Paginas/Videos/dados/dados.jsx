@@ -14,18 +14,18 @@ import singAlone from '../videos&img/sing_alone.jpg'
 import singAloneVideo from '../videos&img/singAloneVideo.mp4'
 
 export const dados = [
-    {type: "video", url: adaoVideo},
+    {type: "video", url: adaoVideo, poster: adao},
     
-    {type: "video", url: blizzardVideo},
+    {type: "video", url: blizzardVideo, poster:  blizzard},
     
-    {type: "video", url: corridaVideo},
+    {type: "video", url: corridaVideo, poster: corrida},
     
-    {type: "video", url: kaijuVideo},
+    {type: "video", url: kaijuVideo, poster: kaiju},
     
-    {type: "video", url: morteVideo},
+    {type: "video", url: morteVideo, poster: morte},
     
-    {type: "video", url: omniManVideo},
+    {type: "video", url: omniManVideo, poster: omniMan},
     
-    {type: "video", url: singAloneVideo}
+    {type: "video", url: singAloneVideo, poster: singAlone}
     
 ]
