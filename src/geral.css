@@ -7,7 +7,6 @@
   font-family: "Quicksand", sans-serif;
   list-style: none;
   text-decoration: none;
-  /* border: 1px solid red; */
 }
 
 body {
@@ -15,7 +14,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100vw;
-  background: linear-gradient(#fff 15% , #42A6D3 35%) no-repeat;
+  background: linear-gradient(#fff 4% , #2f8fbb 20%) no-repeat;
   font-family: 'Roboto', sans-serif;
   background-size: cover;
   background-position: center;
