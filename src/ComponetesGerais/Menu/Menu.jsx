@@ -48,7 +48,7 @@ export default function Menu() {
 
               <ul className="dropdown-menu">
                 <li className="menuItens menuItens2">
-                  <Link to='Memoria' className='menuLink ' >
+                  <Link to='Memoria' className='menuLink menuJogosMemoria' >
                     Memoria
                   </Link>
                 </li>

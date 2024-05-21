@@ -64,8 +64,8 @@ body {
 }
 .temas-quiz .escolher-quiz-div .escolher-quiz-btn:hover {
   background-color: #F1E49D;
-  border: 10px solid #FFDE59;
-  border-radius: none;
+  border: 10px solid solid;
+  border-radius: #FFDE59;
 }
 .temas-quiz .escolher-quiz-div .escolher-quiz-btn img {
   width: 50%;

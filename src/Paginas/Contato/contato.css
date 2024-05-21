@@ -2,7 +2,7 @@
 #contato {
     
     gap: 1rem;
-    background: linear-gradient(#7bbcda 2% , #9969d8 92%, #2f8fbb 10% );
+    background: linear-gradient(#90b3c400 4% , #9969d8 92%, #2f8fbb 10% );
     width: 100%;
 }
 
@@ -21,12 +21,14 @@
     display: flex;
     flex-direction: column;
     width: 90%;
-    min-width: 250px;
+    min-width: 280px;
 
     h1 {
         margin-bottom: 20%;
         font-weight: bold;
         font-size: 5.5rem;
+
+
     }
 }
 
@@ -86,10 +88,19 @@
         gap:30px;
         width:100%;
     }
+
+    .formularioContato {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        min-width: 300px;
+    
+    }
+
     .imgContato{
         width: 50%;
         min-height: 200px;
-       
     }
    
     #img-nuvem{
@@ -125,15 +136,17 @@
 
 /* Tablet */
 
-@media screen and (min-width:601px) and (max-width:1250px){
+@media screen and (max-width:1250px){
 
     .containerContato{
         display: flex;
         justify-content: center;
         align-items: center;
         gap:30px;
+        padding: 2rem 1rem;
         width:100%;
     }
+
     
     .imgContato{
         width: 50%;
@@ -149,7 +162,8 @@
     }
   
     .formularioContato h1{
-        font-size: 21px;
+        font-size: 3rem;
+        text-align: center;
     }
 
     .imgIconsContato{

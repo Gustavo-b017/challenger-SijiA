@@ -3,13 +3,16 @@
 
 .popupInfo {
     position: absolute;
-    top: 50%;
+    top: 85%;
     left: 50%;
+    transform: translate(-50%, -50%);
     padding: 0.8rem 1.2rem;
+    min-width: 550px;
+    max-width: 750px;
 
     background-color: variaveis.$azul_claro;
-    @include mixinsQuiz.div-size(50rem, auto);
-    @include mixinsQuiz.borda(0.7rem, solid, variaveis.$azul_claro_subtom, 0.6rem);
+    @include mixinsQuiz.div-size(55%, auto);
+    @include mixinsQuiz.borda(0.7rem, variaveis.$azul_claro_subtom, 0.6rem);
 
     transform: translate(-50%, -50%) scale(.9);
     pointer-events: none;
@@ -48,13 +51,16 @@
     .btn-group {
         @include mixinsQuiz.flex-config(row, space-between, center, wrap);
         margin: 1rem auto;
-        width: 60%;
+        width: 100%;
 
         .info-btn {
             // display: inline-flex;
             @include mixinsQuiz.fonte-config(1rem, bold, uppercase);
+
             @include mixinsQuiz.flex-config(row, center, center);
+
             @include mixinsQuiz.div-size(9rem, 2.8rem);
+
             letter-spacing: 1px;
             outline: none;
             transition: .5s;
@@ -65,7 +71,7 @@
                 background-color: transparent;
                 color: variaveis.$rosa_intermediario;
                 
-                @include mixinsQuiz.borda(0.2rem, solid, variaveis.$rosa_intermediario, 0.4rem);
+                @include mixinsQuiz.borda(0.2rem, variaveis.$rosa_intermediario, 0.4rem);
                 @include mixinsQuiz.sombra(0, 0, 4px, variaveis.$rosa_intermediario);
               
                 &:hover {
@@ -78,15 +84,33 @@
             &:nth-child(2) {
                 background-color: transparent;
                 
-                @include mixinsQuiz.borda(0.2rem, solid, variaveis.$verde_escuro, 0.4rem);
+                @include mixinsQuiz.borda(0.2rem, variaveis.$verde_escuro, 0.4rem);
                 @include mixinsQuiz.sombra(0, 0, 4px, variaveis.$verde_escuro);
             
+                a {
+                    text-decoration: none;
+                    color: variaveis.$verde_escuro;
+                    text-align: center;
+                    
+                    @include mixinsQuiz.div-size(100%, 1.4rem);
+                    @include mixinsQuiz.flex-config(row, center, center);
+
+                    align-items: center;
+                    text-align: center;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                }
+
                 .iniciaQuiz {
                     color: variaveis.$verde_escuro;
+                    padding:  0;
                 }
               
                 &:hover {
                     background-color: variaveis.$verde_escuro;
+                    
                     .iniciaQuiz {
                         color: #fff;
                     }
@@ -108,4 +132,33 @@
     pointer-events: none;
     user-select: none;
 
+}
+
+@media (max-width: 768px) {
+    .popupInfo {
+        @include mixinsQuiz.div-size(90%, auto);
+        margin-top: 40%;
+        padding: 0.5rem 0.8rem;
+        min-width: 290px;
+
+        h2 {
+            @include mixinsQuiz.fonte-config(2rem, 700);
+        }
+
+        .info {
+            @include mixinsQuiz.fonte-config(1rem, 700);
+        }
+
+        .btn-group {
+            width: 80%;
+            @include mixinsQuiz.flex-config(column-reverse, space-between, center, wrap);
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .popupInfo {
+        margin-top: 50%;
+        min-width: 290px;
+    }
 }

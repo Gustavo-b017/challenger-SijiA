@@ -1,10 +1,13 @@
 .popupInfo {
   position: absolute;
-  top: 50%;
+  top: 85%;
   left: 50%;
+  transform: translate(-50%, -50%);
   padding: 0.8rem 1.2rem;
+  min-width: 550px;
+  max-width: 750px;
   background-color: #D1F4F6;
-  width: 50rem;
+  width: 55%;
   height: auto;
   border: 0.7rem solid #A5E2E6;
   border-radius: 0.6rem;
@@ -44,7 +47,7 @@
   align-items: center;
   flex-wrap: wrap;
   margin: 1rem auto;
-  width: 60%;
+  width: 100%;
 }
 .popupInfo .btn-group .info-btn {
   font-size: 1rem;
@@ -79,8 +82,27 @@
   border-radius: 0.4rem;
   box-shadow: 0 0 4px #6AB035;
 }
+.popupInfo .btn-group .info-btn:nth-child(2) a {
+  text-decoration: none;
+  color: #6AB035;
+  text-align: center;
+  width: 100%;
+  height: 1.4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: none;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
 .popupInfo .btn-group .info-btn:nth-child(2) .iniciaQuiz {
   color: #6AB035;
+  padding: 0;
 }
 .popupInfo .btn-group .info-btn:nth-child(2):hover {
   background-color: #6AB035;
@@ -101,4 +123,38 @@
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+}
+
+@media (max-width: 768px) {
+  .popupInfo {
+    width: 90%;
+    height: auto;
+    margin-top: 40%;
+    padding: 0.5rem 0.8rem;
+    min-width: 290px;
+  }
+  .popupInfo h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: none;
+  }
+  .popupInfo .info {
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: none;
+  }
+  .popupInfo .btn-group {
+    width: 80%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 500px) {
+  .popupInfo {
+    margin-top: 50%;
+    min-width: 290px;
+  }
 }/*# sourceMappingURL=popUp.css.map */
