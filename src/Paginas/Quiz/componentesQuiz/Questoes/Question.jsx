@@ -29,7 +29,7 @@ function Question ({ question, answers, handleAnswerClick, handleEnterPress }) {
 
 // PropTypes é usado para verificar se as props recebidas são do tipo correto
 Question.propTypes = {
-  question: PropTypes.element.isRequired, // question deve ser um elemento React
+  question: PropTypes.string.isRequired, // question deve ser um elemento React
   answers: PropTypes.array.isRequired, // answers deve ser um array
   handleAnswerClick: PropTypes.func.isRequired, // handleAnswerClick deve ser uma função
   handleEnterPress: PropTypes.func.isRequired // handleEnterPress deve ser uma função
