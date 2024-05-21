@@ -34,10 +34,10 @@
   width: 10px;
   height: 100%;
   background: #5a8fc7;
-  transform: skewY(64deg);
+  transform: skewY(60deg);
   transform-origin: right;
   transition: 0.5s;
-  bottom: -18px;
+  bottom: -16px;
 }
 
 .menuItens:hover::before {
