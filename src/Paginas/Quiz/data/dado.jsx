@@ -32,6 +32,8 @@ const data = [
         },
       ],
     },
+
+    
     {
       category: "Ecocardiograma",
       questions: [
@@ -53,6 +55,8 @@ const data = [
         },
       ],
     },
+
+
     {
       category: "Tomografia",
       questions: [
