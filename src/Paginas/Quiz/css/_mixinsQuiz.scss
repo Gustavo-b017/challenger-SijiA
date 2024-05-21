@@ -20,8 +20,8 @@
     box-shadow: $a $b $c $cor;
 }
 
-@mixin borda($tam, $tipo, $cor, $radius:none){
-    border: $tam $tipo $cor;
+@mixin borda($tam,  $cor, $radius:none){
+    border: $tam solid $cor;
     border-radius: $radius;
 }
 
