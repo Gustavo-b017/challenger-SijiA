@@ -19,48 +19,48 @@ export default function SobreProjeto() {
                 
                 <div className="conteudo-sobre">
                     {/* Carrosel */}
-                    <div id="carouselExampleFade" class="carrosel-sobre carousel slide carousel-fade" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="d-block w-100" src={slide1} alt="Primeiro Slide"/>
+                    <div id="carouselExampleFade" className="carrosel-sobre carousel slide carousel-fade" data-ride="carousel">
+                        <div className="carousel-inner">
+                            <div className="carousel-item active">
+                                <img className="d-block w-100" src={slide1} alt="Primeiro Slide"/>
                             </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src={slide2} alt="Segundo Slide"/>
+                            <div className="carousel-item">
+                                <img className="d-block w-100" src={slide2} alt="Segundo Slide"/>
                             </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src={slide3} alt="Terceiro Slide"/>
+                            <div className="carousel-item">
+                                <img className="d-block w-100" src={slide3} alt="Terceiro Slide"/>
                             </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src={slide4} alt="Quarto Slide"/>
+                            <div className="carousel-item">
+                                <img className="d-block w-100" src={slide4} alt="Quarto Slide"/>
                             </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src={slide5} alt="Quinto Slide"/>
+                            <div className="carousel-item">
+                                <img className="d-block w-100" src={slide5} alt="Quinto Slide"/>
                             </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src={slide6} alt="Sexto Slide"/>
+                            <div className="carousel-item">
+                                <img className="d-block w-100" src={slide6} alt="Sexto Slide"/>
                             </div>
                         </div>
-                        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Anterior</span>
+                        <a className="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span className="sr-only">Anterior</span>
                         </a>
-                        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Próximo</span>
+                        <a className="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span className="sr-only">Próximo</span>
                         </a>
                     </div>
 
                     {/* Abas */}
-                    <div class="cards-proposito accordion" id="accordionExample">
+                    <div className="cards-proposito accordion" id="accordionExample">
                         {/* card que fica visivel */}
-                        <div class="card-proposito-style card">
+                        <div className="card-proposito-style card">
 
                             {/* titulo */}
-                            <div class="card-header" id="headingOne">
+                            <div className="card-header" id="headingOne">
 
-                                <h2 class="mb-0">
+                                <h2 className="mb-0">
                                     {/* botao que faz abri e fechar */}
-                                    <button class="btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <button className="btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                         Problema
                                     </button>
                                 </h2>
@@ -68,8 +68,8 @@ export default function SobreProjeto() {
                             </div>
 
                             {/* codigo que abre e fecha */}
-                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                                <div class="card-body">
+                            <div id="collapseOne" className="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div className="card-body">
                                     O projeto busca resolver o problema da falta de informação e da ansiedade enfrentada por pacientes pediátricos 
                                     e seus acompanhantes em ambientes hospitalares. Muitas vezes, esses indivíduos se veem diante do desconhecido, 
                                     sem compreender completamente os procedimentos médicos aos quais serão submetidos. Isso gera insegurança, medo 
@@ -78,16 +78,16 @@ export default function SobreProjeto() {
                             </div>
                         </div>
 
-                        <div class="card-proposito-style card">
-                            <div class="card-header" id="headingTwo">
-                                <h2 class="mb-0">
-                                    <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <div className="card-proposito-style card">
+                            <div className="card-header" id="headingTwo">
+                                <h2 className="mb-0">
+                                    <button className="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                         Objetivo
                                     </button>
                                 </h2>
                             </div>
-                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                <div class="card-body">
+                            <div id="collapseTwo" className="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div className="card-body">
                                     <ul>
                                         <li>1. Fornecer informações claras sobre procedimentos médicos.</li>
                                         <li>2. Promover a interatividade e a educação dos usuários.</li>
@@ -98,16 +98,16 @@ export default function SobreProjeto() {
                             </div>
                         </div>
 
-                        <div class="card-proposito-style card">
-                            <div class="card-header" id="headingThree">
-                            <h2 class="mb-0">
-                                <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <div className="card-proposito-style card">
+                            <div className="card-header" id="headingThree">
+                            <h2 className="mb-0">
+                                <button className="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                     Diferenciais
                                 </button>
                             </h2>
                             </div>
-                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                            <div class="card-body">
+                            <div id="collapseThree" className="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div className="card-body">
                                 <ul>
                                     <li>1. Abordagem educativa e interativa.</li>
                                     <li>2. Acesso a informações claras e acessíveis.</li>

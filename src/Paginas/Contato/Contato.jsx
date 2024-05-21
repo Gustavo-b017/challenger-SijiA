@@ -14,29 +14,40 @@ function Contato() {
                     <h1>CONTATO</h1>
 
                     {/* CAMPO NOME */}
-                    <div class="inputContato input-group mb-3">
-                        <span class="input-group-text"><img src={icon_nome} className='imgIconsContato ' alt="nome"/></span>
-                        <div class="form-floating">
-                            <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Digite seu nome"/>
-                            <label for="floatingInputGroup1">Digite seu nome</label>
+                    
+                    <div className="inputContato input-group mb-3">
+                        <span className="input-group-text">
+                            <img src={icon_nome} className='imgIconsContato ' alt="nome"/>
+                        </span>
+                        
+                        <div className="form-floating">
+                            <input type="text" className="form-control" id="floatingInputGroup1" placeholder="Digite seu nome"/>
+                            <label htmlFor="floatingInputGroup1">Digite seu nome</label>
                         </div>
                     </div>
 
                     {/* CAMPO EMAIL */}
-                    <div class="inputContato input-group mb-3">
-                        <span class="input-group-text"><img src={icon_email} className='imgIconsContato ' alt="email"/></span>
-                        <div class="form-floating">
-                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"/>
-                            <label for="floatingInput">Digite seu email</label>
+                    <div className="inputContato input-group mb-3">
+                        <span className="input-group-text">
+                            <img src={icon_email} className='imgIconsContato ' alt="email"/>
+                        </span>
+
+                        <div className="form-floating">
+                            <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com"/>
+                            <label htmlFor="floatingInput">Digite seu email</label>
                         </div>
                     </div>
 
                     {/* CAMPO MENSAGEM */}
-                    <div class="inputContato input-group mb-4">
-                        <span class="input-group-text"><img src={icon_mensagem} className='imgIconsContato ' alt="nome"/></span>
-                        <div class="form-floating">
+                    <div className="inputContato input-group mb-4">
+
+                        <span className="input-group-text">
+                            <img src={icon_mensagem} className='imgIconsContato ' alt="nome"/>
+                        </span>
+
+                        <div className="form-floating">
                             <textarea className="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                            <label for="floatingTextarea">Esvreva sua mensagem</label>
+                            <label htmlFor="floatingTextarea">Esvreva sua mensagem</label>
                         </div>
                     </div>
         

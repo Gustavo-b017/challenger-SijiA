@@ -24,10 +24,15 @@ export const ContinuarBtn = ()  => {
   const popupInfo = document.querySelector('.popupInfo');
   const quizBox = document.querySelector('.quiz-box');
   
-  quizSection.classList.add('active');
-  quizBox.classList.add('active');
-  popupInfo.classList.remove('active');
+  if (quizSection) {
+    quizSection.classList.add('active');
+  }
+  if (quizBox) {
+    quizBox.classList.add('active');
+  }
+  if (popupInfo) {
+    popupInfo.classList.remove('active');
+  }
 
-  ShowQuestions(0);
 }
 

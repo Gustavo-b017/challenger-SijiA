@@ -23,7 +23,8 @@ body {
   justify-content: space-between;
   flex-direction: column;
   color: #fff; 
-  
+  min-height: 100vh;
+  overflow-x: hidden !important;
 }
 
 @media (max-width:600px){

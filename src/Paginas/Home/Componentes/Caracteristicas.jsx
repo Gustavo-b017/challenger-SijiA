@@ -11,9 +11,9 @@ export default function Caracteristicas() {
     <div className="container-nuvens">
         
         <div className="nuvem">
-            <img src={nuvem1} class="img-fluid nuvens-img" id="img-fluid-nuvem" alt="nuvem"></img>
+            <img src={nuvem1} className="img-fluid nuvens-img" id="img-fluid-nuvem" alt="nuvem"></img>
             <div className="content">
-                <img src={i_video} class="img-fluid" alt="videos"></img>
+                <img src={i_video} className="img-fluid" alt="videos"></img>
                 <span className="nuvem-text">
                     Vídeos curtos  sobre exames e diagnósticos.
                 </span>
@@ -21,9 +21,9 @@ export default function Caracteristicas() {
         </div>
 
         <div className="nuvem">
-            <img src={nuvem2} class="img-fluid nuvens-img" alt="jogos"/>
+            <img src={nuvem2} className="img-fluid nuvens-img" alt="jogos"/>
             <div className="content">
-                <img src={i_jogo} class="img-fluid" alt="jogos"></img>
+                <img src={i_jogo} className="img-fluid" alt="jogos"></img>
                 <span className="nuvem-text">
                     Jogos dinâmicos para entreter e informar.
                 </span>
@@ -31,9 +31,9 @@ export default function Caracteristicas() {
         </div>
 
         <div className="nuvem">
-            <img src={nuvem3} class="img-fluid nuvens-img" alt="conhecimento"/>
+            <img src={nuvem3} className="img-fluid nuvens-img" alt="conhecimento"/>
             <div className="content">
-                <img src={i_quiz} class="img-fluid" alt="quiz"></img>
+                <img src={i_quiz} className="img-fluid" alt="quiz"></img>
                 <span className="nuvem-text">
                     Feedbacks e tratamento personalizado. 
                 </span>

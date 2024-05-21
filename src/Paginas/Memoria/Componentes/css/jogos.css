@@ -29,7 +29,7 @@
     margin: 0 auto 1vw;
     font-size: 1.9rem;  
     font-weight: 700;
-    color: #ffffff76;
+    color: black;
 }
 
 /* ------------------ JOGO ------------------ */
@@ -56,7 +56,7 @@
     @media screen and (max-width: 800px){
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 1rem;
-        grid-template-rows: auto !important;
+        
     }
 }
 
@@ -183,6 +183,11 @@ transition-delay: 0s ;
 
 @media screen and (min-width:320px) and (max-width:600px){
    /* Ecolher jogo */
+
+   .tituloMemoria{
+    color:black;
+    text-align: center;
+   }
     .titulo-memoria img{
         width:150px;
     }
@@ -205,15 +210,20 @@ transition-delay: 0s ;
         width:290px;
     }
 
+    .controleJogoMemoria {
+        display:inline-block
+    }
+
+   .controleJogoMemoria p{
+        font-size:28px;
+        text-align: center;
+   }
+
    
 
     .divCartasMemoria{
-        display:grid;
-        grid-template-rows:80px 80px 80px ;
-        grid-template-columns: 80px 80px 80px;
         align-items: center;
         place-items: center;
-        width:300px;
     }
 
 
@@ -221,7 +231,13 @@ transition-delay: 0s ;
         object-fit: cover;
     }
 
+    .buttonsMemoria{
+        display:flex;
+    }
 
+    
+  
+    
 
 
 
@@ -258,6 +274,20 @@ transition-delay: 0s ;
     }
 
     /* Hemograma */
+
+    .tituloMemoria{
+        text-align: center;
+        color:black;
+    }
+
+    .controleJogoMemoria {
+        display:inline-block
+    }
+
+   .controleJogoMemoria p{
+        font-size:28px;
+        text-align: center;
+   }
 
 
 }

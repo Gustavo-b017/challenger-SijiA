@@ -1,12 +1,10 @@
 .container-nuvens {
-
     margin-top: -90px;
     background-color: #42A6D3;
     display: grid;
     grid-template-rows: auto;
     /* Adapta os elementos conforme o tamanho da tela */
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-
 }
 
 .nuvem {
