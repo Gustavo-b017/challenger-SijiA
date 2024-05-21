@@ -14,14 +14,14 @@ function VideoGallery() {
                         {
                             file.type === "image"
                             ? <img  src={file.url} alt=""/>
-                            : <video src={file.url} controls />
+                            : <video src={`${file.url}#t=0.001`} muted preload="metadata" />
                         }  
                     </div>
                 ))}
             </div>
 
-            <div className="popUpMedia">
-                <span> &times; </span>
+            <div className="popUpMedia" style={{display : file ? 'block' : 'none'}}>
+                <span onClick={() => setFile(null)}> &times; </span>
 
                 {
                     file?.type === "video" 
