@@ -181,6 +181,7 @@
 
    .results-container {
 
+    min-width: 300px;
     background: variaveis.$branco;
     color: variaveis.$coral_presente;
     @include mixinsQuiz.flex-config(column, center, center);
@@ -192,6 +193,7 @@
     padding: 1%;
     animation: slide-in .4s ease;
     gap: .3rem;
+   
 
     h2 {
       @include mixinsQuiz.fonte-config(4rem, 600, uppercase);
@@ -219,14 +221,17 @@
   }
   
   // BOTÕES
-  .btn-group {
-      @include mixinsQuiz.flex-config(row, space-between, center, wrap);
-      margin: 1rem auto;
-      width: 75%;
 
+
+  .btn-group {
+      @include mixinsQuiz.flex-config(row, center, center, wrap);
+      margin: 1rem auto;
+      width: 100%;
+      gap:15px;
       position: relative;
       padding: .4rem 1rem;
-  
+      
+
       transition: background .2s;
       color: variaveis.$branco;
 
@@ -245,6 +250,7 @@
 
           .formLink {
             color: variaveis.$coral_presente;
+            width:100%;
           }
           
           @include mixinsQuiz.borda(3px, solid, variaveis.$coral_presente, 1.6rem);
@@ -283,9 +289,13 @@
   }
 
   
-  @media (max-width: 900px) {
+  @media screen and (max-width:1250px){
     body {
       font-size: 14px;
+    }
+
+    .results-container h2 {
+      font-size: 2rem;
     }
   
     h1 {

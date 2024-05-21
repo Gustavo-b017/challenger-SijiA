@@ -1,8 +1,7 @@
 .popupInfo {
   position: absolute;
-  top: 85%;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   padding: 0.8rem 1.2rem;
   background-color: #D1F4F6;
   width: 50rem;
@@ -47,7 +46,6 @@
   margin: 1rem auto;
   width: 60%;
 }
-
 .popupInfo .btn-group .info-btn {
   font-size: 1rem;
   font-weight: bold;
@@ -60,44 +58,36 @@
   width: 9rem;
   height: 2.8rem;
   letter-spacing: 1px;
-  /* outline: none; */
+  outline: none;
   transition: 0.5s;
   cursor: pointer;
 }
-
 .popupInfo .btn-group .info-btn:nth-child(1) {
   background-color: transparent;
   color: #E47CA2;
   border: 0.2rem solid #E47CA2;
   border-radius: 0.4rem;
   box-shadow: 0 0 4px #E47CA2;
-
-  &:hover {
-    background-color: #E47CA2;
-    color: #fff;
-  }
 }
-
-
+.popupInfo .btn-group .info-btn:nth-child(1):hover {
+  background-color: #E47CA2;
+  color: #fff;
+}
 .popupInfo .btn-group .info-btn:nth-child(2) {
   background-color: transparent;
   border: 0.2rem solid #6AB035;
   border-radius: 0.4rem;
   box-shadow: 0 0 4px #6AB035;
-
-  &:hover {
-    background-color: #6AB035;
-  }
 }
-
 .popupInfo .btn-group .info-btn:nth-child(2) .iniciaQuiz {
   color: #6AB035;
-
-  &:hover {
-    color: #fff;
-  }
 }
-
+.popupInfo .btn-group .info-btn:nth-child(2):hover {
+  background-color: #6AB035;
+}
+.popupInfo .btn-group .info-btn:nth-child(2):hover .iniciaQuiz {
+  color: #fff;
+}
 
 .popupInfo.active {
   opacity: 1;

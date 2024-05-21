@@ -171,6 +171,7 @@
 }
 /* POPUP COM O RESULTADO GERAL DO QUIZ*/
 .results-container {
+  min-width: 300px;
   background: #fff;
   color: #FE7C78;
   display: flex;
@@ -223,11 +224,12 @@
 .btn-group {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   margin: 1rem auto;
-  width: 75%;
+  width: 100%;
+  gap: 15px;
   position: relative;
   padding: 0.4rem 1rem;
   transition: background 0.2s;
@@ -256,6 +258,7 @@
 }
 .btn-group .info-btn .formLink {
   color: #FE7C78;
+  width: 100%;
 }
 .btn-group .info-btn:hover {
   background-color: #FE7C78;
@@ -283,9 +286,12 @@
     transform: translateX(2px);
   }
 }
-@media (max-width: 900px) {
+@media screen and (max-width: 1250px) {
   body {
     font-size: 14px;
+  }
+  .results-container h2 {
+    font-size: 2rem;
   }
   h1 {
     font-size: 3em;

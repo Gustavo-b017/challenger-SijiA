@@ -8,10 +8,18 @@ export default function PopUpInfo() {
   return (
     <div className="popupInfo">
       <h2>Informações sobre o Quiz</h2>
-      <span className='info'><img src={moeda} alt="moeda"/> Jogo desenvolvido para testar seus conhecimentos sobre os exames.</span>
-      <span className='info'><img src={moeda} alt="moeda"/> As perguntas são de múltipla escolha, com apenas uma alternativa correta.</span>
-      <span className='info'><img src={moeda} alt="moeda"/> Para jogar, clique no botão "INICIAR".</span><br/>
-      <span className='info'><img src={moeda} alt="moeda"/> Boa sorte! Confiamos em Você!</span>
+      <span className='info'><img src={moeda} alt="moeda"/> 
+        <span>Jogo desenvolvido para testar seus conhecimentos sobre os exames.</span> 
+      </span>
+      <span className='info'><img src={moeda} alt="moeda"/> 
+        <span>As perguntas são de múltipla escolha, com apenas uma alternativa correta.</span>
+      </span>
+      <span className='info'><img src={moeda} alt="moeda"/> 
+        <span>Para jogar, clique no botão "INICIAR".</span>
+      </span>  <br/>
+      <span className='info'><img src={moeda} alt="moeda"/> 
+      <span>Boa sorte! Confiamos em Você!</span>
+      </span>
 
       <hr/>
 

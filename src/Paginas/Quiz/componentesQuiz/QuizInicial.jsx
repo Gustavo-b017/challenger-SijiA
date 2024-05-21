@@ -7,6 +7,7 @@ import icon_coracao from '../../Public/icons/coracao.svg'
 import icon_raioX from '../../Public/icons/raioX.svg'
 
 
+
 function QuizInicial() {
 return (
     <main id='quiz'>
