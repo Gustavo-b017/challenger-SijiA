@@ -1,7 +1,8 @@
 .popupInfo {
   position: absolute;
-  top: 50%;
+  top: 85%;
   left: 50%;
+  transform: translate(-50%, -50%);
   padding: 0.8rem 1.2rem;
   background-color: #D1F4F6;
   width: 50rem;
