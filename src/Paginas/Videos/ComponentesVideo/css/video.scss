@@ -1,0 +1,93 @@
+@use 'mixins';
+@use 'variaveis';
+
+.containerVideo {
+    width: 95%;
+    max-width: 1300px;
+    padding: 0 2%;
+    min-height: 70vh;
+    position: relative;
+    margin: 0 auto;
+
+    .bannerVideos img {
+        @include mixins.div-size(60%, auto);
+        @include mixins.flex-config(center, center, center);
+        margin: 0 auto 3%;
+    }
+}
+
+.mediaContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    margin: 0 auto;
+}
+
+.media {
+    width: 100%;    
+    @include mixins.borda(5px, solid, variaveis.$branco, 10px);
+    @include mixins.sombra(0, 5px, 15px, variaveis.$sombra);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.media :is(video, img) {
+    @include mixins.div-size(100%, 100%);
+    object-fit: cover;
+    transition: all .3s linear;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+source{
+    border: 2px solid;
+}
+
+.popUpMedia {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.8);
+    @include mixins.div-size(100%, 100%);
+}
+
+.containerVideo .popUpMedia :is(video, img) {
+    position: absolute;
+    display: block; 
+    top: 50%;
+    left: 50%;
+    max-width: 95%;
+    max-height: 95%;
+    object-fit: contain;
+    transform: translate(-50%, -50%);
+    @include mixins.borda(3px, solid, variaveis.$azul_claro, 10px);
+
+    &:focus {
+        border: none;
+    }
+}
+
+.popUpMedia span {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    @include mixins.fonte-config(2.5rem, bold);
+    z-index: 100;
+    cursor: pointer;
+    user-select: none;
+    color: variaveis.$branco;
+    font-size: 2rem;
+}
+
+.imgVideo {
+    position: relative;
+}
+
+.videoImg{
+    position: absolute;
+}
+
+

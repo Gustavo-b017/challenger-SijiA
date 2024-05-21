@@ -1,5 +1,5 @@
 import VideoGallery from "./ComponentesVideo/VideoGallery";
-import './ComponentesVideo/video.css'
+import './ComponentesVideo/css/video.css'
 
 function Videos() {
 

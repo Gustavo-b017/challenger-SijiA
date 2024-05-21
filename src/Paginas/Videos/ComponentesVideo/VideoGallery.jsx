@@ -1,12 +1,17 @@
 import React, { useState } from "react";
 import { dados } from "../dados/dados";
+import bannerVideos from './img/bannerVideos.gif'
 
 function VideoGallery() {
 
     const [file, setFile] = useState(null);
     return ( 
+
         <div className="containerVideo">
-            <h1>ola galeria de videos</h1>
+
+            <div className="bannerVideos">
+                <img src={bannerVideos} alt="Videos"/>
+            </div>
 
             <div className="mediaContainer">
                 {dados.map((file, index) =>(
