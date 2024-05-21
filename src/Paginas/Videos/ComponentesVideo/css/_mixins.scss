@@ -1,0 +1,33 @@
+@mixin zero-config($margin-param, $padding-param) {
+    margin: $margin-param;
+    padding: $padding-param;
+}
+
+@mixin div-size($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+@mixin flex-config($direction, $justify, $align-items, $wrap:none){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align-items;
+    flex-wrap: $wrap;
+}
+
+@mixin sombra($a, $b, $c, $cor){
+    box-shadow: $a $b $c $cor;
+}
+
+@mixin borda($tam, $tipo, $cor, $radius:none){
+    border: $tam $tipo $cor;
+    border-radius: $radius;
+}
+
+@mixin fonte-config($tam, $esp, $trans:none){
+
+    font-size: $tam;
+    font-weight: $esp;
+    text-transform: $trans;
+}
