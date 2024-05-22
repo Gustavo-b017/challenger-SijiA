@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react'
 import { Link } from "react-router-dom";
 
-import img_1 from '../Img/deboche.webp'
-import img_2 from '../Img/exames-de-sangue.webp'
-import img_3 from '../Img/shrek.jpg'
-import img_4 from '../Img/tomografia.jpg'
-import img_5 from '../Img/hemodialise.jpg'
-import img_6 from '../Img/cachorro.jpg'
+import img_1 from '../Img/img1.jpeg'
+import img_2 from '../Img/hemodialise.jpg'
+import img_3 from '../Img/img3.jpeg'
+import img_4 from '../Img/img4.jpg'
+import img_5 from '../Img/img5.png'
+import img_6 from '../Img/img6.jpg'
 import SoloCard from './Cartas'
 import './css/jogos.css';
 
