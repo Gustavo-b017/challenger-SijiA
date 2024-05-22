@@ -11,12 +11,12 @@
   .cabecalho-quiz {
 
     @include mixinsQuiz.flex-config(column, space-between, center);
-      
+    
     h2 {
-      @include mixinsQuiz.fonte-config(2em, 400);
+      @include mixinsQuiz.fonte-config(2em, 900);
       margin-bottom: 0;
     }
-  
+
     .question-count {
       background: url(../../img/arco-ires.gif);
       background-size: cover;
@@ -25,9 +25,8 @@
       color: #c40094;
 
       .question-number {
-        @include mixinsQuiz.fonte-config(3em, 100);
+        @include mixinsQuiz.fonte-config(3em, bold);
       }
-  
     }
       
     .score-container {
@@ -39,14 +38,12 @@
       .score {
         @include mixinsQuiz.fonte-config(3em, bold);
       }
-
     }
 
     .description {
-      @include mixinsQuiz.fonte-config(0.5em, 100);
+      @include mixinsQuiz.fonte-config(0.5em, 900);
     }
   }
-
 
   /* QUESTÕES DO QUIZ*/
   
@@ -126,9 +123,7 @@
     transform: scale(4);
     z-index: 2;
     opacity: 1;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include mixinsQuiz.flex-config(column, center, center);
     height: 200px;
     overflow: auto;
     margin: auto;
