@@ -134,7 +134,62 @@ export let questoesGeral =  [
     correct: 1,
   },
   {
-    id: 13,
+    id: 13, 
+    question: "O que é um exame de raio-x?",
+    answers: [
+      "Tirar uma foto especial do interior do corpo",
+      "Ler um livro de histórias",
+      "Escutar música ",
+      "Comer uma comida d,eliciosa"
+    ],
+    correct: 0,
+  },
+  {
+    id: 14, 
+    question: "Quem vai te receber e explicar tudo quando você chega ao lugar do exame?",
+    answers: [
+      "Um professor",
+      "Um técnico simpático",
+      "Um policial",
+      "Um músico",
+    ],
+    correct: 1,
+  },
+  {
+    id: 15, 
+    question: "Como é a máquina de raio-x?",
+    answers: [
+      "Uma bicicleta",
+      "Uma câmera",
+      "Um computador",
+      "Um robô",
+    ],
+    correct: 1,
+  },
+  {
+    id: 16, 
+    question: "O que o técnico vai pedir para você fazer enquanto a foto é tirada?",
+    answers: [
+      "Cantar uma música",
+      "Pular bem alto",
+      "Ficar bem quietinho",
+      "Dançar",
+    ],
+    correct: 2,
+  },
+  {   
+    id: 17,
+    question: "O que o médico faz com as fotos tiradas pelo raio-x?",
+    answers: [
+      "Pinta as fotos",
+      "Olha para elas em uma tela de computador",
+      "Coloca em um álbum de fotos",
+      "Esconde as fotos",
+    ],
+    correct: 1,
+  },
+  {
+    id: 18,
     question: "Quando você está dentro da máquina de Tomografia, como deve se comportar?",
     answers: [
       "Cantando alto para animar o ambiente",
@@ -144,4 +199,62 @@ export let questoesGeral =  [
     ],
     correct: 1,
   },
+  {
+    id: 19,  
+    question: "O que é um hemograma?",
+    answers: [
+      "Um exame que vigia o seu corpo",
+      "Uma festa de aniversário",
+      "Um jogo de futebol",
+      "Uma viagem de férias",
+    ],
+    correct: 0,
+  },
+  {
+    id: 20,  
+    question: "Quem pode te acompanhar quando você vai fazer um hemograma?",
+    answers: [
+      "Um monstro assustador",
+      "Um amigo de aventuras",
+      "Um desconhecido",
+      "Um animal de estimação",
+    ],
+    correct: 1,
+  },
+  {
+    id: 21,  
+    question: "Como é a sensação quando tiram uma gotinha do seu sangue?",
+  
+    answers: [
+      "Dói muito",
+      "É como se alguém te desse um carinho bem rápido",
+      "Faz cócegas  ",
+      "É como um abraço apertado",
+    ],
+    correct: 1,
+  },
+  {
+    id: 22,  
+    question: "Para onde vai o sangue depois que tiram uma gotinha?",
+    answers: [
+      "Para o parque",
+      "Para o laboratório",
+      "Para a escola",
+      "Para a loja de brinquedos",
+    ],
+    correct: 1,
+  },
+  {
+    id: 23,  
+    question: "Quais são os três tipos de 'amiguinhos' que os médicos procuram no sangue?",
+    answers: [
+      "Glóbulos vermelhos, glóbulos brancos e plaquetas  ",
+      "Carros, aviões e trens  ",
+      "Doces, chocolates e sorvetes  ",
+      "Peixes, pássaros e cachorros",
+    ],
+    correct: 0,
+  } 
 ];
+
+
