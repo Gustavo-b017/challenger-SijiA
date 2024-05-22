@@ -1,6 +1,11 @@
+import chat from './img/chat.png'
+import './css/duvidas.css'
+
 function Duvidas() {
     return ( 
-        <h1>pagina de duvidas (chat gpt)</h1>
+        <div className="Duvidas">
+            <img src={chat} alt=""/>
+        </div>
     );
 }
 
