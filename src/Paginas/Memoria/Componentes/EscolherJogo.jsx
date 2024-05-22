@@ -28,7 +28,7 @@ function EscolherJogo() {
             <button className="memoriaEscolherBtn">
               <Link to="Hemodialize"> 
                 <img className="memoriaEscolherBtnImg img-fluid" src={hemoglobina} alt="" />
-                <p className="memoriaBtnP">Hemodialize</p> 
+                <p className="memoriaBtnP">HEMOGRAMA</p> 
               </Link>
             </button>
 
