@@ -8,10 +8,10 @@ function Question ({ question, answers, handleAnswerClick, handleEnterPress }) {
     <li className="question">
       <h2 className="question-title" tabIndex="0">
          {/* O texto da pergunta é renderizado aqui */}
-        {question} 
+         {question} 
       </h2>
       <ul className="question-answers" tabIndex="-1">
-        {answers.map((answer, index) => {
+        {answers && answers.map((answer, index) => {
           // Para cada resposta em answers, um componente Answer é renderizado
           return (
             <Answer
