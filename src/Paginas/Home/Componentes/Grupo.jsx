@@ -54,8 +54,8 @@ export default function Grupo() {
           <div className="conteudo">
             <h2>Felipe Ferreira</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatum accusantium fugiat perferendis, laborum enim 
+              Sou estudante de Engenharia de Software na Fiap. Acredito que sou guiado pela criatividade , que me faz fazer bem feito
+              qualquer tipo de trabalho tecnológico.
             </p>
             <a href="" className="leia-mais">
               Veja mais

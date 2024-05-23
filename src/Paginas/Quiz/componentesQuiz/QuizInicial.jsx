@@ -31,14 +31,13 @@ return (
             
                         <button className="escolher-quiz-btn"  type="button" onClick={StartBtn}>
                             <img className="escolher-quiz-btn-img img-fluid" src={icon_coracao} alt="Quiz - eletrocardiograma" />
-                            <p className="quiz-btn-p">Eletrocardiograma</p> 
+                            <p className="quiz-btn-p" id="eletrocardiograma">Eletrocardiograma</p> 
                         </button>
             
                         <button className="escolher-quiz-btn"  type="button" onClick={StartBtn}>
                             <img className="escolher-quiz-btn-img img-fluid" src={icon_raioX} alt="Quiz - raioX" />
                             <p className="quiz-btn-p">Raio-X</p> 
                         </button>
-        
                     </div>
                 </div>
             </section>
