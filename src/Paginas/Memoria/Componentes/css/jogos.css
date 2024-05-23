@@ -10,7 +10,6 @@
     grid-template-columns: 3fr 1fr;
     justify-content: center;
     align-items: center;
-
     gap: 5%;
 
 }
@@ -236,6 +235,10 @@ transition-delay: 0s ;
     }
 
     
+  .memoriaBtnP{
+    font-size: 1.3rem;
+  }
+
   
     
 

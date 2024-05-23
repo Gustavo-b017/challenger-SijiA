@@ -5,3 +5,20 @@
     margin: 0 auto;
     width: 60%;
 }
+
+@media screen and (max-width:600px){
+    .Duvidas{
+        width:100%;
+      
+    }
+
+     .img {
+      align-items: center;
+      justify-content: center;
+      width:100%;
+    }
+
+    .img img{
+      width:100%;
+    }
+}
