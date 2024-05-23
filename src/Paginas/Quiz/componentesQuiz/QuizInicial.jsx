@@ -16,7 +16,7 @@ return (
         
                 {/* BANNER QUIZ  */}
                 <div className="banner-quiz">
-                    <img src={banner_quiz} className="img-fluid gif-quiz" alt="Quiz"/>
+                    <img src={banner_quiz} className="img-fluid gif-quiz" id="imgBanner" alt="Quiz"/>
                 </div>
         
                 {/* LISTA DE QUIZZES */}
