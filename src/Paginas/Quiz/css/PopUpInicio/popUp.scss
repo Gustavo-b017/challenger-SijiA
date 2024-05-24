@@ -12,7 +12,7 @@
 
     background-color: variaveis.$azul_claro;
     @include mixinsQuiz.div-size(55%, auto);
-    @include mixinsQuiz.borda(0.7rem, variaveis.$azul_claro_subtom, 0.6rem);
+    @include mixinsQuiz.borda(0.7rem, solid, variaveis.$azul_claro_subtom, 0.6rem);
 
     transform: translate(-50%, -50%) scale(.9);
     pointer-events: none;
@@ -71,7 +71,7 @@
                 background-color: transparent;
                 color: variaveis.$rosa_intermediario;
                 
-                @include mixinsQuiz.borda(0.2rem, variaveis.$rosa_intermediario, 0.4rem);
+                @include mixinsQuiz.borda(0.2rem, solid, variaveis.$rosa_intermediario, 1.5rem);
                 @include mixinsQuiz.sombra(0, 0, 4px, variaveis.$rosa_intermediario);
               
                 &:hover {
@@ -84,7 +84,7 @@
             &:nth-child(2) {
                 background-color: transparent;
                 
-                @include mixinsQuiz.borda(0.2rem, variaveis.$verde_escuro, 0.4rem);
+                @include mixinsQuiz.borda(0.2rem, solid,variaveis.$verde_escuro, 1.5rem);
                 @include mixinsQuiz.sombra(0, 0, 4px, variaveis.$verde_escuro);
             
                 a {

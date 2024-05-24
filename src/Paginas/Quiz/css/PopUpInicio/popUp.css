@@ -9,8 +9,8 @@
   background-color: #D1F4F6;
   width: 55%;
   height: auto;
-  border: 0.7rem #A5E2E6 0.6rem;
-  border-radius: none;
+  border: 0.7rem solid #A5E2E6;
+  border-radius: 0.6rem;
   transform: translate(-50%, -50%) scale(0.9);
   pointer-events: none;
   transition: 0.3s ease;
@@ -68,8 +68,8 @@
 .popupInfo .btn-group .info-btn:nth-child(1) {
   background-color: transparent;
   color: #E47CA2;
-  border: 0.2rem #E47CA2 0.4rem;
-  border-radius: none;
+  border: 0.2rem solid #E47CA2;
+  border-radius: 1.5rem;
   box-shadow: 0 0 4px #E47CA2;
 }
 .popupInfo .btn-group .info-btn:nth-child(1):hover {
@@ -78,8 +78,8 @@
 }
 .popupInfo .btn-group .info-btn:nth-child(2) {
   background-color: transparent;
-  border: 0.2rem #6AB035 0.4rem;
-  border-radius: none;
+  border: 0.2rem solid #6AB035;
+  border-radius: 1.5rem;
   box-shadow: 0 0 4px #6AB035;
 }
 .popupInfo .btn-group .info-btn:nth-child(2) a {

@@ -77,15 +77,3 @@ body {
   color: #67A3E2;
   text-transform: uppercase;
 }/*# sourceMappingURL=homeQuiz.css.map */
-
-
-@media screen and (max-width:1250px){
-  .temas-quiz h1{
-    text-align: center;
-    font-size: 1.5rem;
-  }  
-
-  #eletrocardiograma{
-    font-size: 1.2rem;
-  }
-}
