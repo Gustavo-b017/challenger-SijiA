@@ -1,11 +1,11 @@
 import chat from './img/chat.png'
-import ChatGemini from './Gemini.jsx'
+import './FrontEnd'
 
 function Duvidas() {
     return ( 
-        <body id='bodyChat'>
-            <ChatGemini/>
-        </body>
+        <form action="">
+            <input type="text" />
+        </form>
     );
 }
 
