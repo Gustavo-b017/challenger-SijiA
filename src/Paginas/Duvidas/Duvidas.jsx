@@ -1,11 +1,7 @@
-import chat from './img/chat.png'
-import './FrontEnd'
 
 function Duvidas() {
     return ( 
-        <form action="">
-            <input type="text" />
-        </form>
+        <h1>duvidas</h1>
     );
 }
 
