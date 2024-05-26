@@ -28,6 +28,12 @@ export default function Menu() {
             </li>
 
             <li className="menuItens">
+              <Link to='Duvidas' className='menuLink'>
+                Duvidas
+              </Link>
+            </li>
+
+            <li className="menuItens">
               <Link to='Videos' className='menuLink'>
                 Videos
               </Link>

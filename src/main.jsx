@@ -17,6 +17,7 @@ import QuizInicial from './Paginas/Quiz/componentesQuiz/QuizInicial.jsx'
 import QuizPerguntas from './Paginas/Quiz/componentesQuiz/QuizPerguntas.jsx'
 
 import Videos from './Paginas/Videos/Videos.jsx'
+import Duvidas from './Paginas/Duvidas/Duvidas.jsx'
 
 const router = createBrowserRouter([{
   path: '/',
@@ -44,6 +45,7 @@ const router = createBrowserRouter([{
       ]
     },
     {path:'Contato', element: <Contato/>},
+    {path:'Duvidas', element: <Duvidas/>},
     {path:'Videos', element: <Videos/>},
     {path:'*', element: <PageNotFound/>},
   ]
