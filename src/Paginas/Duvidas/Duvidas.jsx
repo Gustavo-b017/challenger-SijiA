@@ -4,7 +4,7 @@ import './css/duvidas.css'
 function Duvidas() {
     return ( 
         <div className="Duvidas">
-            <h1>Página ainda em desenvolvimento 👷✨</h1>
+            <h1>Página em desenvolvimento 👷✨</h1>
             <img src={chat} className='imgChat' alt=""/>
         </div>
     );
