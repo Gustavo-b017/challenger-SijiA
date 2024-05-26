@@ -7,6 +7,7 @@ import icon_memoria from '../Img/banner_memoria/icons-jg-memoria.gif'
 import hemoglobina from '../../Public/icons/hemoglobina.svg'
 import coracao from '../../Public/icons/coracao.svg'
 import raioX from '../../Public/icons/raioX.svg'
+import atencao from '../Img/atencao.png'
 
 function EscolherJogo() {
   return (
@@ -23,6 +24,9 @@ function EscolherJogo() {
 
       <div className="temas">
         <h1>Escolha o tema que deseja jogar:</h1>
+        <span className='info'><img src={atencao} className="imgInfo" alt="atenção"/> 
+          <span>   Em futuras atualizações, as imagens do jogo serão devidamente separadas por temas</span>
+        </span>
         <div className="memoriaEscolherDivBtn">
 
             <button className="memoriaEscolherBtn">

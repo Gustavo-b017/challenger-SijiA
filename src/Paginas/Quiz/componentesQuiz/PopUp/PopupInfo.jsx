@@ -3,6 +3,7 @@ import '../../css/PopUpInicio/popUp.css';
 import { Link } from 'react-router-dom';
 import { ContinuarBtn, ExitBtn } from './LogicaQuiz.jsx';
 import moeda from '../../img/moeda.gif'
+import atencao from '../../img/atencao.png'
 
 export default function PopUpInfo() {
   return (
@@ -19,6 +20,12 @@ export default function PopUpInfo() {
       </span>  <br/>
       <span className='info'><img src={moeda} alt="moeda"/> 
       <span>Boa sorte! Confiamos em Você!</span>
+      </span>
+
+      <hr/>
+
+      <span className='info'><img src={atencao} alt="atenção"/> 
+      <span>   Em futuras atualizações, as perguntas serão devidamente separadas por temas</span>
       </span>
 
       <hr/>
