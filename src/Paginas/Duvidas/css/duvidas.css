@@ -1,0 +1,11 @@
+.Duvidas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5% auto;
+}
+
+.imgChat {
+    width: 60%;
+}

@@ -1,7 +1,12 @@
+import chat from './img/chat.png'
+import './css/duvidas.css'
 
 function Duvidas() {
     return ( 
-        <h1>duvidas</h1>
+        <div className="Duvidas">
+            <h1>Página ainda em desenvolvimento 👷✨</h1>
+            <img src={chat} className='imgChat' alt=""/>
+        </div>
     );
 }
 
